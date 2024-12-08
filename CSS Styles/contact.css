@@ -1,4 +1,4 @@
-.frame {
+.header-caption {
   display: flex;
   margin-top: 45px;
   justify-content: center;
@@ -8,7 +8,7 @@
   gap: 6px;
   position: relative;
 }
-.frame .OURCONTACTS {
+.header-caption .OURCONTACTS {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -20,20 +20,21 @@
   letter-spacing: 0;
   line-height: normal;
 }
-.frame .text-wrapper {
+.header-caption .text-wrapper {
   font-family: "Inter-ExtraBold Italic", Helvetica;
   font-weight: 800;
   font-style: italic;
+  margin-right: -10px;
 }
-.frame .span {
+.header-caption .span {
   font-family: "Inter-Italic", Helvetica;
   font-style: italic;
   font-size: 36px;
 }
-.frame .have-a-question-or {
+.header-caption .have-a-question-or {
   position: relative;
   align-self: stretch;
-  font-family: "Poppins-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -103,7 +104,7 @@
   position: relative;
   align-self: stretch;
   margin-top: -1px;
-  font-family: "Poppins-Medium", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #000000;
   font-size: 24px;
@@ -114,7 +115,7 @@
 .middle-frame .div-4 {
   position: relative;
   align-self: stretch;
-  font-family: "Poppins-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -127,7 +128,7 @@
   align-self: stretch;
   height: 36px;
   margin-top: -1px;
-  font-family: "Poppins-Medium", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #000000;
   font-size: 24px;
@@ -138,7 +139,7 @@
 .middle-frame .text-wrapper-3 {
   position: relative;
   align-self: stretch;
-  font-family: "Poppins-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -148,7 +149,7 @@
 }
 
 .middle-frame .span {
-  font-family: "Poppins-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -191,7 +192,7 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Poppins-Medium", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #000000;
   font-size: 16px;
@@ -216,7 +217,7 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Poppins-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #9f9f9f;
   font-size: 16px;
@@ -292,7 +293,7 @@
   justify-content: center;
   align-items: center;
   gap: 66px;
-  padding: 20px 0px;
+  padding: 64px 0px;
   position: relative;
 }
 
@@ -329,8 +330,9 @@
   position: relative;
   align-self: stretch;
   margin-top: -1px;
-  font-family: "Poppins-ExtraBold", Helvetica;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
   color: #242424;
   font-size: 24px;
   text-align: center;
@@ -339,13 +341,14 @@
 }
 
 .feature .text-wrapper {
-  font-family: "Poppins-ExtraBoldItalic", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
 .feature .span {
-  font-family: "Poppins-Italic", Helvetica;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
@@ -354,13 +357,13 @@
 .feature .p {
   position: relative;
   align-self: stretch;
-  font-family: "Poppins-Medium", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--variable-collection-gray-600);
   font-size: 14px;
   text-align: center;
   letter-spacing: 0;
-  line-height: 21px;
+  line-height: 0px;
 }
 
 .feature .frame-2 {

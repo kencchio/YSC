@@ -44,9 +44,9 @@ body {
 
 .NAVBAR {
   display: flex;
-  width: 1440px;
-  align-items: space-between;
-  gap: 147px;
+  width: 100%;
+  justify-content: space-between;
+  gap: auto;
   padding: 18px 36px;
   position: relative;
   background-color: var(--variable-collection-white);
@@ -57,7 +57,6 @@ body {
   flex-direction: column;
   width: 323px;
   align-items: flex-start;
-  gap: 10px;
   position: relative;
 }
 

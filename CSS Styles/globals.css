@@ -44,7 +44,8 @@ body {
 
 .NAVBAR {
   display: flex;
-  width: 1440px;
+  width: 100%;
+  justify-content: space-between;
   align-items: space-between;
   gap: 147px;
   padding: 18px 36px;

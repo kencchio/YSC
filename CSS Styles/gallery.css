@@ -1,5 +1,193 @@
-.list {
+/**.list {
   columns: 300px;
+}
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.shoes-gallery {
+  width: 80%;
+}
+.review-gallery {
+  width: 80%;
+}
+.rate-us {
+  display: flex;
+  margin-top: 45px;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+.RATE{
+  color: white; 
+  font-size: 48px; 
+  font-family: Inter; 
+  font-style: italic; 
+  font-weight: 800; 
+  word-wrap: break-word"
+}
+.US-ON{
+  color: white; 
+  font-size: 36px; 
+  font-family: Inter; 
+  font-style: italic; 
+  font-weight: 400; 
+  word-wrap: break-word
+}
+
+.header-caption {
+  display: flex;
+  margin-top: 45px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.header-caption .OURGALLERY {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header-caption .text-wrapper {
+  font-family: "Inter-ExtraBold Italic", Helvetica;
+  font-weight: 800;
+  font-style: italic;
+  margin-right: -10px;
+}
+.header-caption .span {
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.header-caption .description {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.middle-frame {
+  display: flex;
+  padding-top: 45px;
+  margin: auto;
+  width: 1152px;
+  align-items: flex-start;
+  align-self: center;
+  position: relative;
+}
+/*Shoes section*/
+.review-section {
+  max-width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.review-gallery img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.review-gallery {
+  columns: 3 250px;
+  gap: 10px;
+}
+
+.shoes-section {
+  max-width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.shoes-gallery {
+  columns: 4 250px;
+  gap: 10px;
+}
+
+.shoes-gallery img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+/*Show-more*/
+.show-more {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.show-more .button {
+  all: unset;
+  box-sizing: center;
+  display: flex;
+  width: 184px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: relative;
+  background-color: var(--variable-collection-primary);
+  font-weight: bold;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+/*PS: magkaiba yunng margin per color sa sections */
+.yellow {
+  background-color: var(--variable-collection-primary);
+}
+.white {
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  background-color: var(--variable-collection-light);
+}
+.red {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  background-color: var(--variable-collection-secondary);
+}
+.social-media-container {
+  height: 60px;
+  margin-top: 2.5%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+}
+
+.btn:hover{
+  opacity: 0.9;
 }
 
 /* Mobile Styles */

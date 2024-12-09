@@ -9,12 +9,6 @@
   <link rel="stylesheet" href="/YSC/bootstrap-5.3.3-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="/YSC/CSS Styles/globals.css" />
   <link rel="stylesheet" href="/YSC/CSS Styles/contact.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
 </head>
 
 <body>
@@ -120,49 +114,52 @@
         </div>
       </div>
     </div>
-    <div class="div-wrapper">
+    <form class="div-wrapper">
       <div class="div-5">
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Your Name</div>
-          <div class="div-wrapper-2">
-            <div class="text-wrapper-6">abc</div>
+          <div class="inputbox">
+            <input type="text" class="form-control" name="your-name" id="name" placeholder="abc" />
           </div>
         </div>
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Email</div>
-          <div class="div-wrapper-2">
-            <div class="text-wrapper-6">abc@gmail.com</div>
+          <div class="inputbox">
+            <input type="email" class="form-control" name="email" id="email" placeholder="abc@gmail.com" />
           </div>
         </div>
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Order Number</div>
-          <div class="div-wrapper-2">
-            <div class="text-wrapper-6">0072637289</div>
+          <div class="inputbox">
+            <input type="text" class="form-control" name="order-number" id="order-number" placeholder="0072637289" />
           </div>
         </div>
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Phone Number</div>
-          <div class="div-wrapper-2">
-            <div class="text-wrapper-6">09922269802</div>
+          <div class="inputbox">
+            <input type="number" class="form-control" name="phone-number" id="phone-number" placeholder="09922269802" />
           </div>
         </div>
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Concern</div>
-          <div class="element-outlined-wrapper">
-            <img class="element-outlined" src="/YSC/folder-icons/down.svg" />
+          <div class="inputbox">
+            <select name="" class="form-select" id="concern">
+              <option value="">-- Select a concern --</option>
+              <option value="">My cat died</option>
+              <option value="">My cat died</option>
+              <option value="">My cat died</option>
+            </select>
           </div>
         </div>
-        <div class="div-6">
+        <div class="div-6 form-group">
           <div class="text-wrapper-5">Message</div>
-          <div class="div-wrapper-3">
-            <p class="text-wrapper-6">I’d like to ask about...</p>
-          </div>
+          <textarea name="" id="message" class="form-control" placeholder="I'd like to ask about..."></textarea>
         </div>
         <button class="button">
           <div class="label">SUBMIT TICKET</div>
         </button>
       </div>
-    </div>
+    </form>
   </div>
   <div class="feature">
     <div class="frame">
@@ -200,6 +197,8 @@
       </div>
     </div>
   </div>
+  <script src="/YSC/JS Scripts/contact.js"></script>
+  <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 </body>
 
 </html>

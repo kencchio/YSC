@@ -122,7 +122,7 @@ body {
 
 .NAVBAR .right {
   display: flex;
-  width: 30%;
+  width: 25%;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;

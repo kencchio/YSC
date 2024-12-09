@@ -10,6 +10,7 @@
   --variable-collection-white: var(--color-palette-white);
   --variable-collection-light: rgba(238, 238, 238, 1);
   --variable-collection-primary: rgba(247, 230, 0, 1);
+  --variable-collection-primary2: rgba(247, 220, 0, 1);
   --variable-collection-secondary: rgba(215, 38, 56, 1);
   --variable-collection-info: rgba(128, 222, 234, 1);
   --variable-collection-accent1: rgba(255, 152, 0, 1);

@@ -361,6 +361,11 @@ small {
   white-space: nowrap;
 }
 
+.form-error {
+  font-size: 18px;
+  display: none;
+}
+
 .feature {
   display: flex;
   width: 100%;
@@ -462,21 +467,21 @@ small {
 }
 
 /* Mobile Styles */
-@media (max-width: 425px) {
+@media (max-width: 425.98px) {
   body {
     background-color: lightblue;
   }
 }
 
 /* Tablet Styles */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768.98px) {
   body {
     background-color: lightgreen;
   }
 }
 
 /* Laptop Styles */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024.98px) {
   body {
     background-color: lightyellow;
   }

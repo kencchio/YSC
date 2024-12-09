@@ -54,7 +54,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: auto;
+  gap: 20px;
   padding: 18px 36px;
   position: relative;
   background-color: var(--variable-collection-white);
@@ -66,11 +66,30 @@ body {
   width: fit-content;
   align-items: flex-start;
   position: relative;
+  margin: 0;
 }
 
 .NAVBAR .navbar-brand-img {
   width: 323px;
   height: 45px;
+}
+
+.NAVBAR #navbarNav {
+  justify-content: center;
+  width: 100%;
+}
+
+.NAVBAR .navbar-toggler {
+  border: 0;
+}
+
+.NAVBAR .navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.NAVBAR .navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .NAVBAR .center {
@@ -105,7 +124,7 @@ body {
 
 .NAVBAR .right {
   display: flex;
-  width: 40%;
+  width: 30%;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
@@ -410,6 +429,19 @@ body {
   body {
     background-color: lightgreen;
   }
+  .NAVBAR .navbar-brand-img {
+    width: 280px;
+    height: 45px;
+  }
+  .NAVBAR .search-box {
+    display: none;
+  }
+  .NAVBAR #icon-search-l {
+    display: block;
+  }
+  .NAVBAR .right {
+    width: fit-content;
+  }
   .FOOTER .footer-upper {
     width: 100%;
     padding: 40px 0;
@@ -442,6 +474,38 @@ body {
   body {
     background-color: lightyellow;
   }
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap !important;
+    flex-flow: row nowrap !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+  }
+
   .NAVBAR .navbar-brand-img {
     width: 280px;
     height: 45px;

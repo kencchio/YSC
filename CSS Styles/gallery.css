@@ -13,6 +13,32 @@
 .shoes-gallery {
   width: 80%;
 }
+.rate-us {
+  display: flex;
+  margin-top: 45px;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+.RATE{
+  color: white; 
+  font-size: 48px; 
+  font-family: Inter; 
+  font-style: italic; 
+  font-weight: 800; 
+  word-wrap: break-word"
+}
+.US-ON{
+  color: white; 
+  font-size: 36px; 
+  font-family: Inter; 
+  font-style: italic; 
+  font-weight: 400; 
+  word-wrap: break-word
+}
 
 .header-caption {
   display: flex;
@@ -111,6 +137,34 @@
   position: relative;
   background-color: var(--variable-collection-primary);
   font-weight: bold;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*PS: magkaiba yunng margin per color sa sections */
+.yellow {
+  background-color: var(--variable-collection-primary);
+}
+.white {
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  background-color: var(--variable-collection-light);
+}
+.red {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  background-color: var(--variable-collection-secondary);
+}
+.social-media-container {
+  height: 59px;
+  margin-top: 2.5%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
 
 /* Mobile Styles */
 @media (max-width: 425px) {

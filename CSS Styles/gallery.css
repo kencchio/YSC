@@ -106,16 +106,29 @@
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
-.review-gallery img {
-  margin-bottom: 10px;
+
+.reviews-column{
+  flex: 1; /* Each column takes equal space */
+  height: 400px; /* Set a fixed height for the column */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  margin: 0 5px; /* Optional: Add some margin between columns */
+
+}
+.reviews-column img {
+  width: 100%; /* Make images responsive */
+  margin-bottom: 10px; /* Space between images */
   border-radius: 5px;
-  width: 100%;
 }
-.review-gallery {
-  columns: 3 250px;
+.reviews-gallery {
+  columns: 3 200px;
   gap: 10px;
 }
+/*Scrollbar*/
+
 
 .shoes-section {
   max-width: 85%;

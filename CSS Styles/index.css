@@ -57,9 +57,22 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 425px) {
+@media (max-width: 425.98px) {
   body {
     background-color: lightblue;
+  }
+  .header-caption .text-wrapper {
+    font-size: 12px;
+  }
+  .header-caption .div-wrapper {
+    height: 32px;
+  }
+
+  .header-caption .tagline {
+    font-size: 24px;
+  }
+  .header-caption .tagline2 {
+    font-size: 14px;
   }
 }
 
@@ -68,7 +81,6 @@
   body {
     background-color: lightgreen;
   }
-
   .header-caption .text-wrapper {
     font-size: 16px;
   }

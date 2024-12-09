@@ -1,0 +1,112 @@
+.frame {
+  display: flex;
+  width: 1005px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 359px;
+  height: 45px;
+  justify-content: center;
+  padding: 4px 5px;
+  background-color: var(--variable-collection-white);
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .div {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .div-wrapper {
+  display: inline-flex;
+  height: 37px;
+  justify-content: center;
+  padding: 6px 15px;
+  flex: 0 0 auto;
+  background-color: var(--variable-collection-white);
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background and transform */
+}
+
+.frame .div-wrapper:hover {
+  background-color: var(--variable-collection-gray-100);
+  transform: translateY(-3px); /* Slide up effect on hover */
+}
+
+.frame .div-wrapper:focus {
+  background-color: var(--variable-collection-primary);
+  transform: translateY(-3px); /* Slide up effect on focus */
+}
+
+.frame .div-wrapper.active {
+  background-color: var(--variable-collection-primary);
+  color: white;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-dark);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .fields {
+  display: flex;
+  width: 136px;
+  height: 45px;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  position: relative;
+  background-color: var(--variable-collection-primary);
+}
+
+.frame .atom {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -5.5px;
+  margin-bottom: -5.5px;
+}
+
+.frame .text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--fieldstext);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.frame .element-outlined {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: -5.5px;
+  margin-bottom: -5.5px;
+}

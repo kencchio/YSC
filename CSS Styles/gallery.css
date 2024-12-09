@@ -124,7 +124,7 @@
   justify-content: center;
 }
 .shoes-gallery {
-  columns: 4 250px;
+  columns: 4 225px;
   gap: 10px;
 }
 
@@ -189,6 +189,11 @@
 .btn:hover{
   opacity: 0.9;
 }
+
+
+
+
+
 
 /* Mobile Styles */
 @media (max-width: 425px) {

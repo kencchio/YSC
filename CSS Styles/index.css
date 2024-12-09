@@ -12,7 +12,6 @@
 .header-caption .text-wrapper {
   position: relative;
   align-self: stretch;
-  margin-top: -1px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -24,8 +23,7 @@
 
 .header-caption .div-wrapper {
   display: flex;
-  height: 95px;
-  align-items: center;
+  height: 75px;
   justify-content: center;
   gap: 10px;
   position: relative;
@@ -40,7 +38,7 @@
   font-family: "Inter-Black", Helvetica;
   font-weight: 900;
   color: #000000;
-  font-size: 56px;
+  font-size: 48px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -70,12 +68,40 @@
   body {
     background-color: lightgreen;
   }
+
+  .header-caption .text-wrapper {
+    font-size: 16px;
+  }
+  .header-caption .div-wrapper {
+    height: 48px;
+  }
+
+  .header-caption .tagline {
+    font-size: 32px;
+  }
+  .header-caption .tagline2 {
+    font-size: 20px;
+  }
 }
 
 /* Laptop Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
     background-color: lightyellow;
+  }
+
+  .header-caption .text-wrapper {
+    font-size: 20px;
+  }
+  .header-caption .div-wrapper {
+    height: 62px;
+  }
+
+  .header-caption .tagline {
+    font-size: 40px;
+  }
+  .header-caption .tagline2 {
+    font-size: 24px;
   }
 }
 

@@ -54,7 +54,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: auto;
+  gap: 20px;
   padding: 18px 36px;
   position: relative;
   background-color: var(--variable-collection-white);
@@ -63,18 +63,40 @@ body {
 .NAVBAR .left {
   display: flex;
   flex-direction: column;
-  width: 323px;
+  width: fit-content;
   align-items: flex-start;
   position: relative;
+  margin: 0;
+  order: 0;
+}
+
+.NAVBAR .navbar-brand-img {
+  width: 323px;
+  height: 45px;
+}
+
+.NAVBAR .navbar-toggler {
+  border: 0;
+  order: -1;
+}
+
+.NAVBAR .navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.NAVBAR .navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .NAVBAR .center {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: auto;
   position: relative;
   flex: 0 0 auto;
+  order: 1;
 }
 
 .NAVBAR .navbar {
@@ -100,16 +122,17 @@ body {
 
 .NAVBAR .right {
   display: flex;
-  width: 312px;
+  width: 30%;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
   position: relative;
+  order: 2;
 }
 
 .NAVBAR .search-box {
   display: flex;
-  width: 195px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 10px 10px 10px 20px;
@@ -118,6 +141,10 @@ body {
   border-radius: 40px;
   border: 1px solid;
   border-color: var(--variable-collection-dark);
+}
+
+.NAVBAR #icon-search-l {
+  display: none;
 }
 
 .NAVBAR .text-wrapper-3 {
@@ -133,6 +160,8 @@ body {
   white-space: nowrap;
 }
 
+.NAVBAR .icon-search,
+.NAVBAR #icon-search-l,
 .NAVBAR .icon-shopping-bag,
 .NAVBAR .icon-user-profile {
   position: relative;
@@ -151,13 +180,13 @@ body {
 .FOOTER .footer-upper {
   background-color: var(--variable-collection-gray-300);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   height: 271px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 80px 144px;
+  padding: 80px 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -174,17 +203,18 @@ body {
 .FOOTER .outer-frame {
   display: flex;
   height: 111px;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 80px;
+  gap: auto;
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 80%;
 }
 
 .FOOTER .inner-frame1 {
   display: flex;
   flex-direction: column;
-  width: 353px;
+  width: 400px;
   height: fit-content;
   align-items: flex-start;
   gap: 10px;
@@ -272,7 +302,7 @@ body {
 .FOOTER .inner-frame2 {
   display: flex;
   flex-direction: column;
-  width: 168px;
+  width: 140px;
   height: 111px;
   align-items: flex-start;
   gap: 1px;
@@ -305,7 +335,7 @@ body {
 .FOOTER .inner-frame3 {
   display: flex;
   flex-direction: column;
-  width: 103px;
+  width: 140px;
   height: 111px;
   align-items: flex-start;
   gap: 1px;
@@ -315,7 +345,7 @@ body {
 .FOOTER .inner-frame4 {
   display: flex;
   flex-direction: column;
-  width: 90px;
+  width: fit-content;
   align-items: flex-start;
   gap: 5px;
   position: relative;
@@ -346,10 +376,10 @@ body {
   flex-direction: column;
   width: 100%;
   height: 59px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 20px 144px;
+  padding: 20px 0;
   position: absolute;
   top: 271px;
   left: 0;
@@ -358,7 +388,7 @@ body {
 
 .FOOTER .outer-frame2 {
   display: flex;
-  width: 1152px;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -384,4 +414,118 @@ body {
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+}
+
+/* Mobile Styles */
+@media (max-width: 425px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  .NAVBAR .navbar-brand-img {
+    width: 280px;
+    height: 45px;
+  }
+  .NAVBAR .search-box {
+    display: none;
+  }
+  .NAVBAR #icon-search-l {
+    display: block;
+  }
+  .NAVBAR .left {
+    order: -1;
+  }
+  .NAVBAR .right {
+    width: fit-content;
+    order: -1;
+  }
+  .NAVBAR .center {
+    order: -2;
+  }
+  .FOOTER .footer-upper {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .FOOTER .outer-frame {
+    height: fit-content;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .FOOTER .inner-frame1 {
+    width: fit-content;
+    height: 142px;
+  }
+  .FOOTER .inner-frame2 {
+    width: 242px;
+  }
+  .FOOTER .inner-frame4 {
+    width: 242px;
+  }
+  .FOOTER .outer-frame2 {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
+
+/* Laptop Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: lightyellow;
+  }
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap !important;
+    flex-flow: row nowrap !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto !important;
+    flex-basis: auto !important;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+  }
+  .NAVBAR .navbar-brand-img {
+    width: 280px;
+    height: 45px;
+  }
+  .NAVBAR .search-box {
+    display: none;
+  }
+  .NAVBAR #icon-search-l {
+    display: block;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    background-color: lightcoral;
+  }
 }

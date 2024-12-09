@@ -116,6 +116,8 @@ form.addEventListener("submit", (event) => {
   let concernValid = concernInp.value != "null";
   let messageValue = messageInp.value != "";
 
+  let errorMess = document.querySelector(".form-error");
+
   if (
     nameValid &&
     emailValid &&
@@ -124,6 +126,8 @@ form.addEventListener("submit", (event) => {
     concernValid &&
     messageValue
   ) {
+    errorMess.setAttribute("style", "display: none;");
   } else {
+    errorMess.setAttribute("style", "display:inline;");
   }
 });

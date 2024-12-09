@@ -22,8 +22,9 @@
         </div>
         <!--Shoes Gallery-->
         <div class="shoes-section">
-            <div class="shoes-gallery">
-                <img src="/YSC/folder-products/gallery-pics/image_480x360.svg">
+            <div class="shoes-gallery" id="shoes-gallery">
+                <!--TODO: ITERATE pic in array-->
+                <img src="/../folder-products/gallery-pics/image_480x360.svg">
                 <img src="https://via.placeholder.com/215x326" />
                 <img src="https://via.placeholder.com/430x326" />
                 <img src="https://via.placeholder.com/244x326" />
@@ -31,6 +32,7 @@
                 <img src="https://via.placeholder.com/358x320" />
                 <img src="https://via.placeholder.com/240x320" />
                 <img src="https://via.placeholder.com/215x320" />
+
                 <img src="https://via.placeholder.com/309x320" />
                 <img src="https://via.placeholder.com/460x309" />
                 <img src="https://via.placeholder.com/214x309" />
@@ -44,11 +46,12 @@
                 <img src="https://via.placeholder.com/321x342" />
                 <img src="https://via.placeholder.com/230x342" />
                 <img src="https://via.placeholder.com/371x342" />
+
             </div>
         </div>
         <!--Show More button-->
         <div class="show-more">
-            <button class="button">
+            <button class="button" id="show">
                 <div class="label">SHOW LESS</div>
             </button>
         </div>
@@ -91,4 +94,28 @@
     </div>
     </div>
 
+
+    <script>
+        const imagesArr = [
+            "/../folder-products/gallery-pics/image_480x360.svg",
+        ];
+
+        let currentItems = 6;
+
+        button = document.getElementById('show');
+        button.addEventListener('click', function () {
+            loadImages();
+        });
+
+        function loadImages() {
+            const boxContainer = document.getElementById('shoes-gallery');
+            for (let i = 0; i < currentItems; i++) {
+                if (i < imagesArr.length) {
+                    const list = document.createElement('img');
+                    list.src = imagesArr[i];
+                    boxContainer.appendChild(list);
+                }
+            }
+        }
+    </script>
 </body>

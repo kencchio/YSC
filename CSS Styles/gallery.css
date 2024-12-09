@@ -13,6 +13,9 @@
 .shoes-gallery {
   width: 80%;
 }
+.review-gallery {
+  width: 80%;
+}
 .rate-us {
   display: flex;
   margin-top: 45px;
@@ -98,6 +101,21 @@
   position: relative;
 }
 /*Shoes section*/
+.review-section {
+  max-width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.review-gallery img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.review-gallery {
+  columns: 3 250px;
+  gap: 10px;
+}
 
 .shoes-section {
   max-width: 85%;
@@ -105,12 +123,12 @@
   display: flex;
   justify-content: center;
 }
-.shoes-section .shoes-gallery {
+.shoes-gallery {
   columns: 4 250px;
   gap: 10px;
 }
 
-.shoes-section .shoes-gallery img {
+.shoes-gallery img {
   margin-bottom: 10px;
   border-radius: 5px;
   width: 100%;
@@ -143,6 +161,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 /*PS: magkaiba yunng margin per color sa sections */
 .yellow {
@@ -159,11 +178,16 @@
   background-color: var(--variable-collection-secondary);
 }
 .social-media-container {
-  height: 59px;
+  height: 60px;
   margin-top: 2.5%;
   width: 100%;
   position: relative;
   text-align: center;
+
+}
+
+.btn:hover{
+  opacity: 0.9;
 }
 
 /* Mobile Styles */

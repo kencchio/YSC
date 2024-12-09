@@ -1,0 +1,61 @@
+.jumbotron {
+    width: 1440px;
+    height: 750px;
+    }
+    
+.jumbotron img {
+    position: fixed;
+    width: 1440px;
+    height: 750px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    }
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 1152px;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    }
+
+.frame .ABOUTUS {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    }
+
+.frame .text-wrapper {
+    font-family: "Inter-ExtraBold Italic", Helvetica;
+    font-weight: 800;
+    font-style: italic;
+    }
+
+.frame .span {
+    font-family: "Inter-Italic", Helvetica;
+    font-style: italic;
+    font-size: 32px;
+    }
+
+.frame .yoursneakers {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    }
+
+        

@@ -123,7 +123,7 @@ body {
 .NAVBAR .text-wrapper-3 {
   position: relative;
   width: fit-content;
-  font-family: "Inter-Regular", Helvetica;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: var(--variable-collection-accent3);
   font-size: 16px;

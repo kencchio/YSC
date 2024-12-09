@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Gallery</title>
-    <link rel="stylesheet" href="/../bootstrap-5.3.3-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/../CSS Styles/globals.css" />
-    <link rel="stylesheet" href="/../CSS Styles/gallery.css" />
-  
-  </head>
+    <link rel="stylesheet" href="/YSC/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/YSC/CSS Styles/globals.css" />
+    <link rel="stylesheet" href="/YSC/CSS Styles/gallery.css" />
+
+</head>
+
 <body>
-   <div class="section white">
+    <div class="section white">
         <!--Shoes Title-->
         <div class="header-caption">
             <p class="OURGALLERY">
                 <span class="text-wrapper">YOURSNEAKERS</span><span class="span">GALLERY</span>
-            <div class="description">Dive into YourSneakers Collection through our gallery, where each image tells a story.<br/> Explore, get inspired, and see the YourSneakers community in action!</div>
+            <div class="description">Dive into YourSneakers Collection through our gallery, where each image tells a
+                story.<br /> Explore, get inspired, and see the YourSneakers community in action!</div>
         </div>
-         <!--Shoes Gallery-->
-        <div class="shoes-section">  
+        <!--Shoes Gallery-->
+        <div class="shoes-section">
             <div class="shoes-gallery" id="shoes-gallery">
                 <!--TODO: ADD current images (6)-->
              
                 
             </div>
         </div>
-         <!--Show More button-->
-         <div class="show-more" >
+        <!--Show More button-->
+        <div class="show-more">
             <button class="button" id="show">
                 <div class="label">SHOW LESS</div>
             </button>
         </div>
-    </div>     
-    <!--Comments Gallery Section    -->          
+    </div>
+    <!--Comments Gallery Section    -->
     <div class="section yellow">
         <div class="header-caption">
             <p class="OURGALLERY">
                 <span class="text-wrapper">YOURSNEAKERS</span><span class="span">REVIEWS</span>
-            <div class="description">See what our customers have to say!  
-                <br>  Explore feedback from our happy customers and let their experiences inspire your next purchase with us!</div>
+            <div class="description">See what our customers have to say!
+                <br> Explore feedback from our happy customers and let their experiences inspire your next purchase with
+                us!
+            </div>
         </div>
-        <div class="review-section">  
+        <div class="review-section">
             <div class="review-gallery">
                 <img src="https://via.placeholder.com/378x230">
                 <img src="https://via.placeholder.com/378x227">
@@ -56,16 +61,16 @@
             </div>
         </div>
     </div>
-       <!--Rate us Section-->
+    <!--Rate us Section-->
     <div class="section red">
-       <div class="rate-us"><span class="RATE">RATE </span><span class="US-ON">US ON:</span></div>
+        <div class="rate-us"><span class="RATE">RATE </span><span class="US-ON">US ON:</span></div>
         <div class="social-media-container yellow">
-            <img class="btn" src="/../folder-icons/rate-us-facebook.svg">
-            <img class="btn" src="/../folder-icons/rate-us-instagram.svg">
-            <img class="btn" src="/../folder-icons/rate-us-tiktok.svg">
-            </div>
+            <img class="btn" src="/YSC/folder-icons/rate-us-facebook.svg">
+            <img class="btn" src="/YSC/folder-icons/rate-us-instagram.svg">
+            <img class="btn" src="/YSC/folder-icons/rate-us-tiktok.svg">
         </div>
-        </div>
+    </div>
+    </div>
     </div>
 
 
@@ -94,12 +99,12 @@ const imagesArr = [
   "https://via.placeholder.com/371x342"
 ];
 
-let currentItems = 6;
+        let currentItems = 6;
 
-button = document.getElementById('show');
-button.addEventListener('click', function(){
-    loadImages();
-});
+        button = document.getElementById('show');
+        button.addEventListener('click', function () {
+            loadImages();
+        });
 
 function loadImages() {
    const boxContainer = document.getElementById('shoes-gallery');

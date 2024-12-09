@@ -34,7 +34,7 @@
   background-color: var(--variable-collection-primary);
 }
 
-.header-caption .div {
+.header-caption .tagline {
   position: relative;
   width: fit-content;
   font-family: "Inter-Black", Helvetica;
@@ -46,7 +46,7 @@
   line-height: normal;
 }
 
-.header-caption .p {
+.header-caption .tagline2 {
   position: relative;
   align-self: stretch;
   font-family: "Inter-Bold", Helvetica;
@@ -56,4 +56,32 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+/* Mobile Styles */
+@media (max-width: 425px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Laptop Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    background-color: lightcoral;
+  }
 }

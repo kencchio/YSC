@@ -410,6 +410,31 @@ body {
   body {
     background-color: lightgreen;
   }
+  .FOOTER .footer-upper {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .FOOTER .outer-frame {
+    height: fit-content;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .FOOTER .inner-frame1 {
+    width: fit-content;
+    height: 142px;
+  }
+  .FOOTER .inner-frame2 {
+    width: 242px;
+  }
+  .FOOTER .inner-frame4 {
+    width: 242px;
+  }
+  .FOOTER .outer-frame2 {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 90%;
+  }
 }
 
 /* Laptop Styles */

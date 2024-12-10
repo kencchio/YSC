@@ -1,6 +1,21 @@
+.filter-option-radio {
+  margin: 4px 2px;
+  border-radius: 0px;
+}
+
+.main {
+  margin: 64px 5%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter-Regular", Helvetica;
+}
+.right-side {
+  width: 1005px;
+}
+
 .frame {
   display: flex;
-  width: 1005px;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -70,43 +85,293 @@
 
 .frame .fields {
   display: flex;
-  width: 136px;
+  width: 220px;
   height: 45px;
   align-items: center;
   gap: 10px;
   padding: 16px 20px;
   position: relative;
   background-color: var(--variable-collection-primary);
+  border: none;
 }
 
-.frame .atom {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
   position: relative;
-  flex: 1;
-  flex-grow: 1;
-  margin-top: -5.5px;
-  margin-bottom: -5.5px;
+  display: inline-block;
 }
 
-.frame .text {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  background-color: var(--variable-collection-white);
+  min-width: 220px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div {
+  color: var(--variable-collection-dark);
+  padding: 12px 16px;
+  display: block;
   font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--fieldstext);
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
-  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.frame .element-outlined {
+/* Change color of dropdown links on hover */
+.dropdown-content div:hover {
+  background-color: var(--variable-collection-gray-200);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.sort-text {
   position: relative;
+  line-height: 24px;
+  font-family: "Inter-Regular", Helvetica;
+}
+.atom {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.outlined-directions-chevro {
   width: 24px;
+  position: relative;
   height: 24px;
-  margin-top: -5.5px;
-  margin-bottom: -5.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.fields:hover {
+  background-color: var(--variable-collection-primary2);
+}
+
+.left-side {
+  width: 272px;
+}
+
+.refineresults {
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+}
+.showing-number-text {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+}
+.refineresults-parent {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+  text-align: left;
+  font-size: 32px;
+  color: #000;
+  font-family: "Inter-Regular", Helvetica;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.btn-check {
+  margin-right: 20px;
+  border-radius: 0px;
+}
+
+/* .btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  color: red;
+  background-color: red;
+  border-color: red;
+} */
+
+.acc-transp {
+  border: 1px solid var(--variable-collection-dark);
+  border-bottom: none;
+}
+
+.acc-transp-last {
+  border: 1px solid var(--variable-collection-dark);
+}
+
+.accordion-item {
+  background: none;
+}
+
+.accordion-body {
+  border: 1px solid var(--variable-collection-dark);
+  border-bottom: none;
+}
+
+.accordion-body-last {
+  border: 1px solid var(--variable-collection-dark);
+  border-top: none;
+}
+
+.accordion-button {
+  background: none;
+  color: var(--variable-collection-dark);
+}
+
+.accordion-button::after {
+  background-image: url(/YSC/folder-icons/plus-accordion.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/YSC/folder-icons/collapse-accordion.svg);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  outline: none;
+  background: none;
+  color: var(--variable-collection-dark);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  background: none;
+}
+
+.square-div {
+  display: inline-block; /* Make it inline-block to allow margin */
+  width: 40px; /* Set the width of the square */
+  height: 40px; /* Set the height of the square */
+  border: solid 10px; /* Border style */
+  border-radius: 0; /* Square corners */
+  border-style: inset;
+  margin: 4px; /* Margin around the square */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: transparent; /* Default background color */
+}
+
+/* Define colors for each square */
+.square-div-red {
+  border-color: red;
+}
+.square-div-orange {
+  border-color: orange;
+}
+.square-div-yellow {
+  border-color: yellow;
+}
+.square-div-green {
+  border-color: green;
+}
+.square-div-blue {
+  border-color: blue;
+}
+.square-div-indigo {
+  border-color: indigo;
+}
+.square-div-violet {
+  border-color: violet;
+}
+.square-div-black {
+  border-color: black;
+}
+.square-div-white {
+  border-color: white;
+}
+.square-div-gray {
+  border-color: gray;
+}
+
+/* Hover and focus styles */
+.square-div-red:hover,
+.square-div-red:focus,
+.square-div-orange:hover,
+.square-div-orange:focus,
+.square-div-yellow:hover,
+.square-div-yellow:focus,
+.square-div-green:hover,
+.square-div-green:focus,
+.square-div-blue:hover,
+.square-div-blue:focus,
+.square-div-indigo:hover,
+.square-div-indigo:focus,
+.square-div-violet:hover,
+.square-div-violet:focus,
+.square-div-black:hover,
+.square-div-black:focus,
+.square-div-white:hover,
+.square-div-white:focus,
+.square-div-gray:hover,
+.square-div-gray:focus {
+  background-color: currentColor; /* Change background color on hover and focus */
+}
+
+/* Checked styles */
+input[type="checkbox"]:checked + .square-div-red {
+  background-color: red;
+}
+input[type="checkbox"]:checked + .square-div-orange {
+  background-color: orange;
+}
+input[type="checkbox"]:checked + .square-div-yellow {
+  background-color: yellow;
+}
+input[type="checkbox"]:checked + .square-div-green {
+  background-color: green;
+}
+input[type="checkbox"]:checked + .square-div-blue {
+  background-color: blue;
+}
+input[type="checkbox"]:checked + .square-div-indigo {
+  background-color: indigo;
+}
+input[type="checkbox"]:checked + .square-div-violet {
+  background-color: violet;
+}
+input[type="checkbox"]:checked + .square-div-black {
+  background-color: black;
+}
+input[type="checkbox"]:checked + .square-div-white {
+  background-color: white;
+}
+input[type="checkbox"]:checked + .square-div-gray {
+  background-color: gray;
+}
+
+/* Ensure background is transparent when unchecked */
+input[type="checkbox"]:not(:checked) + .square-div-red,
+input[type="checkbox"]:not(:checked) + .square-div-orange,
+input[type="checkbox"]:not(:checked) + .square-div-yellow,
+input[type="checkbox"]:not(:checked) + .square-div-green,
+input[type="checkbox"]:not(:checked) + .square-div-blue,
+input[type="checkbox"]:not(:checked) + .square-div-indigo,
+input[type="checkbox"]:not(:checked) + .square-div-violet,
+input[type="checkbox"]:not(:checked) + .square-div-black,
+input[type="checkbox"]:not(:checked) + .square-div-white,
+input[type="checkbox"]:not(:checked) + .square-div-gray {
+  background-color: transparent; /* Background color when unchecked */
 }

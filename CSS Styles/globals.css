@@ -286,6 +286,7 @@ body {
   font-size: 11px;
   letter-spacing: 0;
   line-height: normal;
+  margin-bottom: 0;
 }
 
 .FOOTER .text-wrapper-3 {
@@ -420,6 +421,10 @@ body {
   display: none;
 }
 
+.FOOTER .unhide-a {
+  display: none;
+}
+
 .FOOTER .hr-unhide {
   display: none;
 }
@@ -468,6 +473,14 @@ body {
     width: 100%;
     padding: 40px 0;
   }
+  .FOOTER .img-transp-bg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .FOOTER .outer-frame {
     display: flex;
     flex-direction: column;
@@ -476,17 +489,59 @@ body {
     height: fit-content;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   .FOOTER .inner-frame1 {
     width: fit-content;
-    height: 142px;
+    height: fit-content;
+    align-items: center;
+    gap: 10px;
+  }
+  .FOOTER .text-wrapper-2 {
+    text-align: center;
+    margin-bottom: 0;
   }
   .FOOTER .inner-frame2 {
     width: 242px;
   }
   .FOOTER .inner-frame4 {
     width: 242px;
+  }
+  .FOOTER .accordion-item {
+    color: var(--variable-collection-dark);
+    background: none;
+    border: none;
+  }
+  .FOOTER .accordion-button {
+    font-size: 12px;
+    padding: 12px 0px;
+    border-radius: none;
+  }
+  .FOOTER .accordion-body {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
+  .FOOTER .accordion-button:focus {
+    box-shadow: none;
+  }
+  .FOOTER .accordion-button:not(.collapsed) {
+    color: var(--variable-collection-dark);
+    background: none;
+    border-radius: none;
+  }
+  .FOOTER
+    .accordion-item:last-of-type
+    > .accordion-header
+    .accordion-button.collapsed {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .FOOTER .acc-transp {
+    background: none;
+    border-bottom: 1px solid var(--variable-collection-dark);
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
   }
   .FOOTER .outer-frame2 {
     flex-direction: column;
@@ -506,6 +561,12 @@ body {
   }
   .FOOTER .unhide {
     display: flex;
+  }
+  .FOOTER .unhide-a {
+    display: block;
+  }
+  .FOOTER .width-a {
+    width: 90%;
   }
   .FOOTER .hr-unhide {
     display: block;
@@ -554,9 +615,13 @@ body {
     flex-wrap: wrap;
     width: 90%;
   }
+  .FOOTER .img-transp-bg {
+    width: 230px;
+    height: 230px;
+  }
   .FOOTER .inner-frame1 {
     width: fit-content;
-    height: 142px;
+    height: 110px;
   }
   .FOOTER .inner-frame2 {
     width: 242px;

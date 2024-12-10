@@ -55,7 +55,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   padding: 18px 36px;
   position: relative;
   background-color: var(--variable-collection-white);
@@ -421,6 +421,38 @@ body {
   body {
     background-color: lightblue;
   }
+  .NAVBAR {
+    gap: 10px;
+    padding: 18px 22px;
+  }
+  .NAVBAR .navbar-brand-img {
+    width: 160px;
+    height: 22px;
+  }
+  .NAVBAR .search-box {
+    display: none;
+  }
+  .NAVBAR #icon-search-l {
+    display: block;
+  }
+  .NAVBAR .left {
+    order: -1;
+  }
+  .NAVBAR .right {
+    width: fit-content;
+    order: -1;
+  }
+  .NAVBAR .center {
+    order: -2;
+  }
+  .NAVBAR .icon-search,
+  .NAVBAR #icon-search-l,
+  .NAVBAR .icon-shopping-bag,
+  .NAVBAR .icon-user-profile {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
   .FOOTER .footer-upper {
     width: 100%;
     padding: 40px 0;
@@ -539,6 +571,12 @@ body {
   .NAVBAR .navbar-brand-img {
     width: 280px;
     height: 45px;
+  }
+  .NAVBAR .text-wrapper-2 {
+    font-size: 14px;
+  }
+  .NAVBAR .right {
+    gap: 10px;
   }
   .NAVBAR .search-box {
     display: none;

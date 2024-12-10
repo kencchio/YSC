@@ -83,28 +83,69 @@
       </div>
     </nav>
 
-    <!-- Filters -->
-    <div class="frame">
-      <div class="frame-wrapper">
-        <div class="div">
-          <button class="div-wrapper active" onclick="setActive(this)">
-            <div class="text-wrapper">ALL</div>
-          </button>
-          <button class="div-wrapper" onclick="setActive(this)">
-            <div class="text-wrapper">MEN’S</div>
-          </button>
-          <button class="div-wrapper" onclick="setActive(this)">
-            <div class="text-wrapper">WOMEN’S</div>
-          </button>
-          <button class="div-wrapper" onclick="setActive(this)">
-            <div class="text-wrapper">KIDS’</div>
-          </button>
+    <div class="main">
+      <div class="left-side debug2">
+        <div class="refineresults-parent">
+          <div class="refineresults">
+            <img src="/YSC/folder-icons/REFINERESULTS.svg" alt="" />
+          </div>
+          <p class="showing-number-text">
+            Showing <span class="currentQty">69</span> results out of
+            <span class="allQty">87</span>.
+          </p>
         </div>
       </div>
+      <div class="right-side debug2">
+        <!-- Filters -->
+        <div class="frame debug">
+          <div class="frame-wrapper">
+            <div class="div">
+              <button class="div-wrapper active" onclick="setActive(this)">
+                <div class="text-wrapper">ALL</div>
+              </button>
+              <button class="div-wrapper" onclick="setActive(this)">
+                <div class="text-wrapper">MEN’S</div>
+              </button>
+              <button class="div-wrapper" onclick="setActive(this)">
+                <div class="text-wrapper">WOMEN’S</div>
+              </button>
+              <button class="div-wrapper" onclick="setActive(this)">
+                <div class="text-wrapper">KIDS’</div>
+              </button>
+            </div>
+          </div>
 
-      <!-- button  -->
+          <!-- Sort By Button  -->
+          <div class="dropdown">
+            <button class="fields">
+              <div class="atom">
+                <div class="sort-text">Sort By:</div>
+              </div>
+              <img
+                class="outlined-directions-chevro"
+                alt=""
+                src="/YSC/folder-icons/down.svg"
+              />
+            </button>
+            <div class="dropdown-content">
+              <div class="">New Arrivals</div>
+              <div class="">Best Sellers</div>
+              <div class="">Price: Highest to Lowest</div>
+              <div class="">Price: Lowest to Highest</div>
+            </div>
+          </div>
+        </div>
+        <div class="items-frame">
+          <!-- items frame -->
+        </div>
+      </div>
     </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     <script src="/YSC/JS Scripts/shop.js"></script>
   </body>

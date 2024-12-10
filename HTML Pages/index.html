@@ -13,7 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR debug">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler debug" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -78,7 +78,7 @@
             <div class="text-wrapper-3">alvinisidro.pelpinosas@gmail.com</div>
           </a>
         </div>
-        <div class="inner-frame2">
+        <div class="inner-frame2 hide">
           <div class="footer-head">YOURSNEAKERS COLLECTION</div>
           <div class="footer-sub">HOME</div>
           <div class="footer-sub">SHOP</div>
@@ -86,20 +86,84 @@
           <div class="footer-sub">GALLERY</div>
           <div class="footer-sub">CONTACT US</div>
         </div>
-        <div class="inner-frame3 debug2">
+        <div class="inner-frame3 hide debug2">
           <div class="footer-head">PRODUCTS</div>
           <div class="footer-sub">NEW ARRIVALS</div>
           <div class="footer-sub">MEN’S</div>
           <div class="footer-sub">WOMEN’S</div>
           <div class="footer-sub">KID’S</div>
         </div>
-        <div class="inner-frame3">
+        <div class="inner-frame3 hide">
           <div class="footer-head">PORTFOLIO</div>
           <div class="footer-sub">GALLERY</div>
           <div class="footer-sub">REVIEWS</div>
           <div class="footer-sub">RATE US</div>
         </div>
-        <div class="inner-frame4">
+
+        <!-- Footer Accordion for Mobile -->
+        <div class="container gg unhide">
+          <div class="accordion" id="footerAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  YOURSNEAKERS COLLECTION
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame2">
+                    <div class="footer-sub">HOME</div>
+                    <div class="footer-sub">SHOP</div>
+                    <div class="footer-sub">OUR STORY</div>
+                    <div class="footer-sub">GALLERY</div>
+                    <div class="footer-sub">CONTACT US</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  PRODUCTS
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3 debug2">
+                    <div class="footer-sub">NEW ARRIVALS</div>
+                    <div class="footer-sub">MEN’S</div>
+                    <div class="footer-sub">WOMEN’S</div>
+                    <div class="footer-sub">KID’S</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  PORTFOLIO
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3">
+                    <div class="footer-sub">GALLERY</div>
+                    <div class="footer-sub">REVIEWS</div>
+                    <div class="footer-sub">RATE US</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-frame4 hide">
           <div class="frame-wrapper">
             <div class="footer-head">FOLLOW US</div>
           </div>
@@ -112,16 +176,23 @@
       </div>
     </div>
     <div class="footer-lower debug">
-      <div class="outer-frame2">
+      <div class="outer-frame2 debug">
         <div class="inner-frame5">
           <div class="footer-lower-text">TERMS &amp; CONDITIONS</div>
-          <div class="footer-lower-text">•</div>
+          <div class="footer-lower-text hide">•</div>
           <div class="footer-lower-text">PRIVACY POLICY</div>
-          <div class="footer-lower-text">•</div>
+          <div class="footer-lower-text hide">•</div>
           <div class="footer-lower-text">SITEMAP</div>
-          <div class="footer-lower-text">•</div>
+          <div class="footer-lower-text hide">•</div>
           <div class="footer-lower-text">FAQS</div>
+          </hr>
+          <div class="social-icons-frame unhide">
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" />
+          </div>
         </div>
+        <div class="hr-unhide"></div>
         <div class="footer-lower-text">
           © 2024 YourSneakersCollection, All Rights Reserved
         </div>

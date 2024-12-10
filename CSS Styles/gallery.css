@@ -12,6 +12,7 @@
 
 .shoes-gallery {
   width: 100%;
+  
 }
 .review-gallery {
   width: 80%;
@@ -137,7 +138,7 @@
   justify-content: center;
 }
 .shoes-gallery {
-  columns: 4 225px;
+  columns: 4 300px;
   gap: 10px;
 }
 
@@ -153,6 +154,10 @@
   gap: 20px;
   position: relative;
   flex: 0 0 auto;
+}
+
+.show-more:hover{
+  opacity: 0.70;
 }
 
 .show-more .button {

@@ -2,6 +2,7 @@
   margin: 64px 5%;
   display: flex;
   justify-content: space-between;
+  font-family: "Inter-Regular", Helvetica;
 }
 .right-side {
   width: 1005px;
@@ -184,4 +185,17 @@
   font-size: 32px;
   color: #000;
   font-family: "Inter-Regular", Helvetica;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.accordion-button::after {
+  background-image: url(/YSC/folder-icons/plus-accordion.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/YSC/folder-icons/collapse-accordion.svg);
+  transform: var(--bs-accordion-btn-icon-transform);
 }

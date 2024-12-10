@@ -341,10 +341,12 @@ small {
   padding: 12px 24px;
   border-radius: 0%;
   background-color: var(--variable-collection-primary);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .middle-frame .btn:hover {
   background-color: var(--variable-collection-primary2);
+  transform: translateY(-3px);
 }
 
 .middle-frame .label {

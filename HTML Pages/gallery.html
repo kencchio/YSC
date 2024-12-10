@@ -91,7 +91,7 @@
 
     <script>
         const imagesArr = [
-        "/YSC/folder-products/gallery-pics/image_480x360.svg", 
+        "/YSC/folder-products/gallery-pics/showcase_1.svg", 
         "/YSC/folder-products/gallery-pics/image_17x13.svg",
         "/YSC/folder-products/gallery-pics/image_960x1280.svg",
         "/YSC/folder-products/gallery-pics/image_15x20.svg",
@@ -113,7 +113,7 @@
         "/YSC/folder-products/gallery-pics/img_61.svg"
         ];
 
-        let currentItems = 6;
+        let currentItems = 8;
         let showingAll = false;
 
         const button = document.getElementById('show');
@@ -131,6 +131,7 @@
                     const list = document.createElement('img');
                     list.src = imagesArr[i];        
                     boxContainer.appendChild(list);
+                    console.log
                 }
             }
             if(!showingAll){

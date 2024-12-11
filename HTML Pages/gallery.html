@@ -91,15 +91,15 @@
 
     <script>
         const imagesArr = [
-        "/YSC/folder-products/gallery-pics/showcase_1.svg", 
-        "/YSC/folder-products/gallery-pics/image_17x13.svg",
-        "/YSC/folder-products/gallery-pics/image_960x1280.svg",
-        "/YSC/folder-products/gallery-pics/image_15x20.svg",
-        "/YSC/folder-products/gallery-pics/image_20x20.svg",
-        "/YSC/folder-products/gallery-pics/image_72x96.svg",
-        "/YSC/folder-products/gallery-pics/image_92x20.svg",
-        "/YSC/folder-products/gallery-pics/img_1536x2048.svg",
-        "/YSC/folder-products/gallery-pics/img_55.svg",
+        "/YSC/folder-products/gallery-pics/gallery_1.svg", 
+        "/YSC/folder-products/gallery-pics/gallery_2.svg",
+        "/YSC/folder-products/gallery-pics/gallery_3.svg",
+        "/YSC/folder-products/gallery-pics/gallery_4.svg",
+        "/YSC/folder-products/gallery-pics/gallery_5.svg",
+        "/YSC/folder-products/gallery-pics/gallery_6.svg",
+        "/YSC/folder-products/gallery-pics/gallery_7.svg",
+        "/YSC/folder-products/gallery-pics/gallery_8.svg",
+        "/YSC/folder-products/gallery-pics/gallery_9.svg",
         "/YSC/folder-products/gallery-pics/img_56.svg",
         "/YSC/folder-products/gallery-pics/img_58.svg",
         "/YSC/folder-products/gallery-pics/img_62.svg",
@@ -142,5 +142,40 @@
         
         }
         loadImages()
+
+
+        //Scroll Event - USES Intersection Observer API
+        const columns = [
+            document.getElementById('reviews-column-1'),
+            document.getElementById('reviews-column-2'),
+            document.getElementById('reviews-column-3')
+        ];
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Sync scroll when any column is visible
+                    window.addEventListener('scroll', syncScroll);
+                } else {
+                    // Remove the scroll event listener when all columns are not visible
+                    if (!columns.some(col => col.getBoundingClientRect().top < window.innerHeight && col.getBoundingClientRect().bottom > 0)) {
+                        window.removeEventListener('scroll', syncScroll);
+                    }
+                }
+            });
+        });
+
+        // Sync the scroll position
+        function syncScroll() {
+            const scrollY = window.scrollY;
+            columns.forEach(column => {
+                column.scrollTop = scrollY; // Sync the scroll position for each column
+            });
+        }
+
+        // Observe each column
+        columns.forEach(column => observer.observe(column));
+        
     </script>
 </body>

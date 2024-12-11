@@ -48,12 +48,6 @@
   font-style: italic;
 }
 
-.header-caption .span {
-  font-family: "Inter-Italic", Helvetica;
-  font-style: italic;
-  font-size: 32px;
-}
-
 .header-caption .yoursneakers {
   position: relative;
   align-self: stretch;

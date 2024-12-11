@@ -229,10 +229,19 @@
   border-radius: 0%;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border: solid 1px var(--variable-collection-gray-600);
+}
+
+.form-control:not(:focus) {
+  border: solid 1px var(--variable-collection-gray-600);
+}
+
 .middle-frame .form-select {
   width: 100%;
   height: 100%;
-  padding: 0 30px;
+  padding: 10px 30px;
   background-size: 16px auto;
   border: none;
   border: solid 1px var(--variable-collection-gray-600);
@@ -249,6 +258,30 @@
   width: 531px;
   height: 150px;
   padding-top: 15px;
+}
+
+small {
+  color: var(--variable-collection-secondary);
+}
+
+.name-error {
+  display: none;
+}
+
+.email-error {
+  display: none;
+}
+
+.order-error {
+  display: none;
+}
+
+.phone-error {
+  display: none;
+}
+
+.form-error {
+  width: 100%;
 }
 
 .middle-frame .text-wrapper-6 {
@@ -296,33 +329,43 @@
   background-color: #ffffff;
 }
 
-.middle-frame .button {
-  all: unset;
-  box-sizing: center;
+.middle-frame .btn {
   display: flex;
-  width: 184px;
-  height: 34px;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 12px 24px;
-  position: relative;
+  border-radius: 0%;
   background-color: var(--variable-collection-primary);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.middle-frame .btn:hover {
+  background-color: var(--variable-collection-primary2);
+  transform: translateY(-3px);
 }
 
 .middle-frame .label {
   position: relative;
   width: fit-content;
-  margin-top: -4px;
-  margin-bottom: -2px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--variable-collection-dark);
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   letter-spacing: 0;
   line-height: 16px;
   white-space: nowrap;
+}
+
+.form-error {
+  font-size: 18px;
+  display: none;
 }
 
 .feature {
@@ -426,21 +469,21 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 425px) {
+@media (max-width: 425.98px) {
   body {
     background-color: lightblue;
   }
 }
 
 /* Tablet Styles */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768.98px) {
   body {
     background-color: lightgreen;
   }
 }
 
 /* Laptop Styles */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024.98px) {
   body {
     background-color: lightyellow;
   }

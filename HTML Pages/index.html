@@ -2,135 +2,207 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YourSneakersCollection - Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourSneakersCollection - Home</title>
 
-    <link rel="stylesheet" href="/YSC/bootstrap-5.3.3-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/YSC/CSS Styles/globals.css" />
-    <link rel="stylesheet" href="/YSC/CSS Styles/index.css" />
+  <link rel="stylesheet" href="/YSC/bootstrap-5.3.3-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/YSC/CSS Styles/globals.css" />
+  <link rel="stylesheet" href="/YSC/CSS Styles/index.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR debug">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Left Part of the Navbar [Brand Logo] -->
-        <a class="navbar-brand left debug" href="index.html">
-            <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
-        </a>
+    <!-- Left Part of the Navbar [Brand Logo] -->
+    <a class="navbar-brand left" href="index.html">
+      <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
+    </a>
 
-        <!-- Collapsible Navbar Items -->
-        <div class="collapse navbar-collapse debug" id="navbarNav">
-            <div class="mx-auto">
-                <div class="navbar-nav">
-                    <div class="nav-item text-wrapper-2">
-                        <a class="nav-link" href="#">SHOP</a>
-                    </div>
-                    <div class="nav-item text-wrapper-2">
-                        <a class="nav-link" href="#">OUR STORY</a>
-                    </div>
-                    <div class="nav-item text-wrapper-2">
-                        <a class="nav-link" href="#">GALLERY</a>
-                    </div>
-                    <div class="nav-item text-wrapper-2">
-                        <a class="nav-link" href="contact.html">CONTACT US</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Collapsible Navbar Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="mx-auto">
+        <div class="navbar-nav">
+          <div class="nav-item text-wrapper-2">
+            <a class="nav-link" href="shop.html">SHOP</a>
+          </div>
+          <div class="nav-item text-wrapper-2">
+            <a class="nav-link" href="story.html">OUR STORY</a>
+          </div>
+          <div class="nav-item text-wrapper-2">
+            <a class="nav-link" href="gallery.html">GALLERY</a>
+          </div>
+          <div class="nav-item text-wrapper-2">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </div>
         </div>
-
-        <!-- Right Part of the Navbar -->
-        <div class="d-flex align-items-center right debug2">
-            <div class="search-box">
-                <div class="text-wrapper-3">Search...</div>
-                <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
-            </div>
-            <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
-            <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
-            <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
-        </div>
-    </nav>
-
-    <!-- Header Banner -->
-    <div class="header-caption container-fluid">
-        <div class="text-wrapper">Since 2022</div>
-        <div class="div-wrapper">
-            <p class="tagline">Fast. Smooth. Value 4 Money</p>
-        </div>
-        <p class="tagline2">That’s what we call #YSCguarantee</p>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div class="FOOTER container-fluid debug2">
-        <div class="footer-upper">
-            <img class="img-transp-bg" src="/YSC/folder-icons/footer-bg.svg" />
-            <div class="outer-frame debug">
-                <div class="inner-frame1 debug">
-                    <img src="/YSC/folder-icons/footer-logo-desktop.svg" alt="" class="logo" />
-                    <p class="text-wrapper-2">
-                        La Huerta, Paranaque, Metro Manila, Philippines
-                    </p>
-                    <a href="mailto:alvinisidro.pelpinosas@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <div class="text-wrapper-3">alvinisidro.pelpinosas@gmail.com</div>
-                    </a>
+    <!-- Right Part of the Navbar -->
+    <div class="d-flex align-items-center right">
+      <div class="search-box">
+        <input type="text" class="form-control search-input" placeholder="Search...">
+        <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+      </div>
+      <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+      <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
+      <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
+    </div>
+  </nav>
+
+  <!-- Header Banner -->
+  <!-- <div class="header-caption container-fluid">
+    <div class="text-wrapper">Since 2022</div>
+    <div class="div-wrapper">
+      <p class="tagline">Fast. Smooth. Value 4 Money</p>
+    </div>
+    <p class="tagline2">That’s what we call #YSCguarantee</p>
+  </div> -->
+
+  <!-- Footer -->
+  <div class="FOOTER container-fluid">
+    <div class="footer-upper">
+      <img class="img-transp-bg" src="/YSC/folder-icons/footer-bg.svg" />
+      <div class="outer-frame">
+        <div class="inner-frame1">
+          <img src="/YSC/folder-icons/footer-logo-desktop.svg" alt="" class="logo" />
+          <p class="text-wrapper-2">
+            La Huerta, Paranaque, Metro Manila, Philippines
+          </p>
+          <a class="social-link" href="mailto:alvinisidro.pelpinosas@gmail.com" target="_blank"
+            rel="noopener noreferrer">
+            <div class="text-wrapper-3">alvinisidro.pelpinosas@gmail.com</div>
+          </a>
+        </div>
+        <div class="inner-frame2 hide">
+          <div class="footer-head">YOURSNEAKERS COLLECTION</div>
+          <div class="footer-sub"><a href="index.html">HOME</a></div>
+          <div class="footer-sub"><a href="shop.html">SHOP</a></div>
+          <div class="footer-sub"><a href="story.html">OUR STORY</a></div>
+          <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
+          <div class="footer-sub"><a href="contact.html">CONTACT US</a></div>
+        </div>
+        <div class="inner-frame3 hide">
+          <div class="footer-head">PRODUCTS</div>
+          <div class="footer-sub"><a href="">NEW ARRIVALS</a></div>
+          <div class="footer-sub"><a href="">MEN’S</a></div>
+          <div class="footer-sub"><a href="">WOMEN’S</a></div>
+          <div class="footer-sub"><a href="">KID’S</a></div>
+        </div>
+        <div class="inner-frame3 hide">
+          <div class="footer-head">PORTFOLIO</div>
+          <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
+          <div class="footer-sub"><a href="">REVIEWS</a></div>
+          <div class="footer-sub"><a href="">RATE US</a></div>
+        </div>
+
+        <!-- Footer Accordion for Mobile -->
+        <div class="container width-a unhide-a">
+          <div class="accordion" id="footerAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <b>YOURSNEAKERSCOLLECTION</b>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame2">
+                    <div class="footer-sub"><a href="index.html">HOME</a></div>
+                    <div class="footer-sub"><a href="shop.html">SHOP</a></div>
+                    <div class="footer-sub"><a href="story.html">OUR STORY</a></div>
+                    <div class="footer-sub"><a class="" href="gallery.html">GALLERY</a></div>
+                    <div class="footer-sub"><a href="contact.html">CONTACT US</a></div>
+                  </div>
                 </div>
-                <div class="inner-frame2">
-                    <div class="footer-head">YOURSNEAKERS COLLECTION</div>
-                    <div class="footer-sub">HOME</div>
-                    <div class="footer-sub">SHOP</div>
-                    <div class="footer-sub">OUR STORY</div>
-                    <div class="footer-sub">GALLERY</div>
-                    <div class="footer-sub">CONTACT US</div>
-                </div>
-                <div class="inner-frame3">
-                    <div class="footer-head">PRODUCTS</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <b>PRODUCTS</b>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3">
                     <div class="footer-sub">NEW ARRIVALS</div>
                     <div class="footer-sub">MEN’S</div>
                     <div class="footer-sub">WOMEN’S</div>
                     <div class="footer-sub">KID’S</div>
+                  </div>
                 </div>
-                <div class="inner-frame3">
-                    <div class="footer-head">PORTFOLIO</div>
-                    <div class="footer-sub">GALLERY</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <b>PORTFOLIO</b>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3">
+                    <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
                     <div class="footer-sub">REVIEWS</div>
                     <div class="footer-sub">RATE US</div>
+                  </div>
                 </div>
-                <div class="inner-frame4">
-                    <div class="frame-wrapper">
-                        <div class="footer-head">FOLLOW US</div>
-                    </div>
-                    <div class="social-icons-frame">
-                        <img class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" />
-                        <img class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" />
-                        <img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" />
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="footer-lower">
-            <div class="outer-frame2">
-                <div class="inner-frame5">
-                    <div class="footer-lower-text">TERMS &amp; CONDITIONS</div>
-                    <div class="footer-lower-text">•</div>
-                    <div class="footer-lower-text">PRIVACY POLICY</div>
-                    <div class="footer-lower-text">•</div>
-                    <div class="footer-lower-text">SITEMAP</div>
-                    <div class="footer-lower-text">•</div>
-                    <div class="footer-lower-text">FAQS</div>
-                </div>
-                <div class="footer-lower-text">
-                    © 2024 YourSneakersCollection, All Rights Reserved
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-    <script src="/YSC/JS Scripts/"></script>
+        <div class="inner-frame4 hide">
+          <div class="frame-wrapper">
+            <div class="footer-head">FOLLOW US</div>
+          </div>
+          <div class="social-icons-frame">
+            <a class="social-link" href=""><img class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" /></a>
+            <a class="social-link" href=""><img class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" /></a>
+            <a class="social-link" href=""><img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-lower">
+      <div class="outer-frame2">
+        <div class="inner-frame5">
+          <div class="footer-lower-text">TERMS &amp; CONDITIONS</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">PRIVACY POLICY</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">SITEMAP</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">FAQS</div>
+          </hr>
+          <div class="social-icons-frame unhide">
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" />
+          </div>
+        </div>
+        <div class="hr-unhide"></div>
+        <div class="footer-lower-text">
+          © 2024 YourSneakersCollection, All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script src="/YSC/JS Scripts/"></script>
 </body>
 
 </html>

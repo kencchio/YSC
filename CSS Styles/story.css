@@ -1,112 +1,111 @@
-
 .jumbotron {
-    width: 1440px;
-    height: 750px;
-    }
-    
+  width: 1440px;
+  height: 750px;
+}
+
 .jumbotron img {
-    position: relative;
-    width: 1440px;
-    height: 750px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    }
+  position: relative;
+  width: 1440px;
+  height: 750px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
 
 .header-caption {
-    margin-top: 64px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-items: center;
-    gap: 6px;
-    position: relative;
-    padding: 0;
-    }
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding: 0;
+}
 
 .header-caption p {
   margin-bottom: 0;
 }
 
 .header-caption .ABOUTUS {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1.00px;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    }
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
 .header-caption .text-wrapper {
-    font-family: "Inter-ExtraBold Italic", Helvetica;
-    font-weight: 800;
-    font-style: italic;
-    }
+  font-family: "Inter-ExtraBold Italic", Helvetica;
+  font-weight: 800;
+  font-style: italic;
+}
 
 .header-caption .span {
-    font-family: "Inter-Italic", Helvetica;
-    font-style: italic;
-    font-size: 32px;
-    }
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  font-size: 32px;
+}
 
 .header-caption .yoursneakers {
-    position: relative;
-    align-self: stretch;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    }
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
 .header-owner {
-    display: flex;
-    width: 100%;
-    height: 474px;
-    margin-top: 40px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    }
-
-.header-owner img{
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 474px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-    
+
+.header-owner img {
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
 .header-owner .img-owner-1 {
-    position: relative;
-    width: 398px;
-    height: 474px;
-    object-fit: cover;
-    }
+  position: relative;
+  width: 398px;
+  height: 474px;
+  object-fit: cover;
+}
 
 .header-owner .img-owner-2 {
-    position: relative;
-    width: 355px;
-    height: 474px;
-    object-fit: cover;
-    }
+  position: relative;
+  width: 355px;
+  height: 474px;
+  object-fit: cover;
+}
 
 .rectangle {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 124px;
-    background-color: var(--variable-collection-primary);
-    z-index: -1;
-    }
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 124px;
+  background-color: var(--variable-collection-primary);
+  z-index: -1;
+}
 
 .Vision-Mission-container {
     width: 100%;
@@ -125,17 +124,25 @@
     text-align: center;
 }
 
-.Vision-Mission-container .Vission-Mission-normal{
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #1f1f1f;
-    font-size: 16px;
-    text-align: center;
+.Vision-Mission-container .Vission-Mission-bold {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #1f1f1f;
+  font-size: 20px;
+  text-align: center;
 }
 
-.text-bold{
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
+.Vision-Mission-container .Vission-Mission-normal {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #1f1f1f;
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-bold {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
 }
 
 /* ADDED PRODUCTS LIST */

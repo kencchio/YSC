@@ -90,6 +90,7 @@
 
 
     <script>
+    
         const imagesArr = [
         "/YSC/folder-products/gallery-pics/gallery_1.svg", 
         "/YSC/folder-products/gallery-pics/gallery_2.svg",
@@ -150,12 +151,21 @@
             document.getElementById('reviews-column-2'),
             document.getElementById('reviews-column-3')
         ];
+           // Sync the scroll position
+        function syncScroll() {
+            const scrollY = window.scrollY;
+            columns.forEach(column => {
+                scrollValue++;
+                column.scrollTop = 0.01; // Sync the scroll position for each column
+            });
+        }
 
         // Create an Intersection Observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     // Sync scroll when any column is visible
+                    let scrollValue = 0;
                     window.addEventListener('scroll', syncScroll);
                 } else {
                     // Remove the scroll event listener when all columns are not visible
@@ -165,17 +175,15 @@
                 }
             });
         });
-
-        // Sync the scroll position
-        function syncScroll() {
-            const scrollY = window.scrollY;
-            columns.forEach(column => {
-                column.scrollTop = scrollY; // Sync the scroll position for each column
-            });
-        }
-
+     
         // Observe each column
         columns.forEach(column => observer.observe(column));
         
+         //btn hover on social media NOT WORK?
+        const btn = document.getElementsByClassName('btn')
+        btn.addEventListener('click', () => {
+            btn.setAttribute("height", 10);
+        })
+
     </script>
 </body>

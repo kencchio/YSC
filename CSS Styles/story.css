@@ -211,22 +211,6 @@
     transition: opacity 0.3s ease;
   }
   
-  .img-box img:hover {
-    opacity: 0; /* Hide the first image on hover */
-  }
-  
-  .img-box:hover img.first-img {
-    opacity: 0; /* Hide the first image */
-  }
-  
-  .img-box:hover img.second-img {
-    opacity: 1; /* Show the second image */
-  }
-  
-  /* #product-section-carousel .item h5 {
-      font-size: 18px;
-  } */
-  
   .product-section-carousel .item h5,
   .product-section-carousel .item h6,
   .product-section-carousel .item ul {

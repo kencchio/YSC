@@ -12,20 +12,67 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Left Part of the Navbar [Brand Logo] -->
+        <a class="navbar-brand left" href="index.html">
+          <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
+        </a>
+    
+        <!-- Collapsible Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto">
+            <div class="navbar-nav">
+              <div class="nav-item text-wrapper-2">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </div>
+              <div class="nav-item text-wrapper-2">
+                <a class="nav-link" href="story.html">OUR STORY</a>
+              </div>
+              <div class="nav-item text-wrapper-2">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+              </div>
+              <div class="nav-item text-wrapper-2">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Part of the Navbar -->
+        <div class="d-flex align-items-center right">
+          <div class="search-box">
+            <input type="text" class="form-control search-input" placeholder="Search...">
+            <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+          </div>
+          <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+          <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
+          <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
+        </div>
+      </nav>
+      <!--END OF NAVBAR-->
+
+
     <div class="section white">
         <!--Shoes Title-->
         <div class="header-caption">
             <p class="OURGALLERY">
-                <span class="text-wrapper">YOURSNEAKERS</span><span class="span">GALLERY</span>
+                <img src ="/YSC/folder-products/gallery-pics/gallery_title.svg"></p>
             <div class="description">Dive into YourSneakers Collection through our gallery, where each image tells a
                 story.<br /> Explore, get inspired, and see the YourSneakers community in action!</div>
         </div>
         <!--Shoes Gallery-->
-        <div class="shoes-section">
-            <div class="shoes-gallery" id="shoes-gallery">
-                <!--TODO: ADD current images (6)-->
-             
+        <div class="overflow-container" id="shoes-container">
+            <div class="shoes-section">
+                <div class="shoes-gallery" id="shoes-gallery">
+                    <!--TODO: ADD current images (6)-->
                 
+                    
+                </div>
             </div>
         </div>
         <!--Show More button-->
@@ -36,10 +83,10 @@
         </div>
     </div>
     <!--Comments Gallery Section    -->
-    <div class="section yellow">
+    <div class="section yellow" id="rate-us-section">
         <div class="header-caption">
             <p class="OURGALLERY">
-                <span class="text-wrapper">YOURSNEAKERS</span><span class="span">REVIEWS</span>
+                <img src="/YSC/folder-products/gallery-pics/review_title.svg"> </p>
             <div class="description">See what our customers have to say!
                 <br> Explore feedback from our happy customers and let their experiences inspire your next purchase with
                 us!
@@ -78,8 +125,10 @@
     </div>
     <!--Rate us Section-->
     <div class="section red">
-        <div class="rate-us"><span class="RATE">RATE </span><span class="US-ON">US ON:</span></div>
-        <div class="social-media-container yellow">
+        <div class="rate-us">
+            <img src="/YSC/folder-products/gallery-pics/rate_title.svg">
+        </div>
+        <div class="social-media-container yellow" id="yellow-line">
             <img class="btn" src="/YSC/folder-icons/rate-us-facebook.svg">
             <img class="btn" src="/YSC/folder-icons/rate-us-instagram.svg">
             <img class="btn" src="/YSC/folder-icons/rate-us-tiktok.svg">
@@ -87,7 +136,149 @@
     </div>
     </div>
     </div>
+    
+    <!-- Footer -->
+  <div class="FOOTER container-fluid">
+    <div class="footer-upper">
+      <img class="img-transp-bg" src="/YSC/folder-icons/footer-bg.svg" />
+      <div class="outer-frame">
+        <div class="inner-frame1">
+          <img src="/YSC/folder-icons/footer-logo-desktop.svg" alt="" class="logo" />
+          <p class="text-wrapper-2">
+            La Huerta, Paranaque, Metro Manila, Philippines
+          </p>
+          <a class="social-link" href="mailto:alvinisidro.pelpinosas@gmail.com" target="_blank"
+            rel="noopener noreferrer">
+            <div class="text-wrapper-3">alvinisidro.pelpinosas@gmail.com</div>
+          </a>
+        </div>
+        <div class="inner-frame2 hide">
+          <div class="footer-head">YOURSNEAKERS COLLECTION</div>
+          <div class="footer-sub"><a href="index.html">HOME</a></div>
+          <div class="footer-sub"><a href="shop.html">SHOP</a></div>
+          <div class="footer-sub"><a href="story.html">OUR STORY</a></div>
+          <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
+          <div class="footer-sub"><a href="contact.html">CONTACT US</a></div>
+        </div>
+        <div class="inner-frame3 hide">
+          <div class="footer-head">PRODUCTS</div>
+          <div class="footer-sub"><a href="">NEW ARRIVALS</a></div>
+          <div class="footer-sub"><a href="">MEN’S</a></div>
+          <div class="footer-sub"><a href="">WOMEN’S</a></div>
+          <div class="footer-sub"><a href="">KID’S</a></div>
+        </div>
+        <div class="inner-frame3 hide">
+          <div class="footer-head">PORTFOLIO</div>
+          <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
+          <div class="footer-sub"><a href="">REVIEWS</a></div>
+          <div class="footer-sub"><a href="">RATE US</a></div>
+        </div>
 
+        <!-- Footer Accordion for Mobile -->
+        <div class="container width-a unhide-a">
+          <div class="accordion" id="footerAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <b>YOURSNEAKERSCOLLECTION</b>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame2">
+                    <div class="footer-sub"><a href="index.html">HOME</a></div>
+                    <div class="footer-sub"><a href="shop.html">SHOP</a></div>
+                    <div class="footer-sub"><a href="story.html">OUR STORY</a></div>
+                    <div class="footer-sub"><a class="" href="gallery.html">GALLERY</a></div>
+                    <div class="footer-sub"><a href="contact.html">CONTACT US</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <b>PRODUCTS</b>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3">
+                    <div class="footer-sub">NEW ARRIVALS</div>
+                    <div class="footer-sub">MEN’S</div>
+                    <div class="footer-sub">WOMEN’S</div>
+                    <div class="footer-sub">KID’S</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed acc-transp" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <b>PORTFOLIO</b>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <div class="inner-frame3">
+                    <div class="footer-sub"><a href="gallery.html">GALLERY</a></div>
+                    <div class="footer-sub">REVIEWS</div>
+                    <div class="footer-sub">RATE US</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-frame4 hide">
+          <div class="frame-wrapper">
+            <div class="footer-head">FOLLOW US</div>
+          </div>
+          <div class="social-icons-frame">
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=100085788162548" target="_blank"><img
+                class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" /></a>
+            <a class="social-link" href="https://www.instagram.com/senyor_pelpi" target="_blank"><img
+                class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" /></a>
+            <a class="social-link" href=""><img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-lower">
+      <div class="outer-frame2">
+        <div class="inner-frame5">
+          <div class="footer-lower-text">TERMS &amp; CONDITIONS</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">PRIVACY POLICY</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">SITEMAP</div>
+          <div class="footer-lower-text hide">•</div>
+          <div class="footer-lower-text">FAQS</div>
+          </hr>
+          <div class="social-icons-frame unhide">
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-fb.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-ig.svg" />
+            <img class="social-icons" src="/YSC/folder-icons/footer-icon-tt.svg" />
+          </div>
+        </div>
+        <div class="hr-unhide"></div>
+        <div class="footer-lower-text">
+          © 2024 YourSneakersCollection, All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script src="/YSC/JS Scripts/"></script>
+  <!--END OF FOOTER-->
 
     <script>
     
@@ -96,94 +287,81 @@
         "/YSC/folder-products/gallery-pics/gallery_2.svg",
         "/YSC/folder-products/gallery-pics/gallery_3.svg",
         "/YSC/folder-products/gallery-pics/gallery_4.svg",
+
         "/YSC/folder-products/gallery-pics/gallery_5.svg",
         "/YSC/folder-products/gallery-pics/gallery_6.svg",
         "/YSC/folder-products/gallery-pics/gallery_7.svg",
         "/YSC/folder-products/gallery-pics/gallery_8.svg",
+
         "/YSC/folder-products/gallery-pics/gallery_9.svg",
         "/YSC/folder-products/gallery-pics/img_56.svg",
         "/YSC/folder-products/gallery-pics/img_58.svg",
         "/YSC/folder-products/gallery-pics/img_62.svg",
+
         "/YSC/folder-products/gallery-pics/img_60.svg",
         "/YSC/folder-products/gallery-pics/img_54.svg",
         "/YSC/folder-products/gallery-pics/img_52.svg",
         "/YSC/folder-products/gallery-pics/img_63.svg",
+        
         "/YSC/folder-products/gallery-pics/img_59.svg",
         "/YSC/folder-products/gallery-pics/img_66.svg",
         "/YSC/folder-products/gallery-pics/img_53.svg",
-        "/YSC/folder-products/gallery-pics/img_61.svg"
+       //Makes the gallery not balanced "/YSC/folder-products/gallery-pics/img_61.svg"
         ];
 
-        let currentItems = 8;
+        let currentItems = 8 - 1; //Index
         let showingAll = false;
+        const overflowContainer = document.querySelector('#shoes-container');
+        const boxContainer = document.getElementById('shoes-gallery');
 
         const button = document.getElementById('show');
         button.addEventListener('click', function () {
             showingAll = !showingAll;
-            loadImages();
+            loadImages()
+            button.querySelector('.label').textContent = showingAll ? 'SHOW LESS' : 'SHOW MORE';
+            
+            
         });
 
+
         function loadImages() {
-            const boxContainer = document.getElementById('shoes-gallery');
+           
             boxContainer.innerHTML = '';
-            const itemsToShow = showingAll ? imagesArr.length : currentItems;
-            for (let i = 0; i < itemsToShow; i++) {
-                if (i < imagesArr.length) {
-                    const list = document.createElement('img');
+
+            for (let i = 0; i < imagesArr.length; i++) {
+
+                    const list = document.createElement('img');         
                     list.src = imagesArr[i];        
                     boxContainer.appendChild(list);
-                    console.log
-                }
+                
             }
             if(!showingAll){
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         
-            button.querySelector('.label').textContent = showingAll ? 'SHOW LESS' : 'SHOW MORE';
+            overflowContainer.setAttribute('class', (showingAll ? 'overflowing' : 'overflow'));
         
         }
-        loadImages()
-
-
-        //Scroll Event - USES Intersection Observer API
-        const columns = [
-            document.getElementById('reviews-column-1'),
-            document.getElementById('reviews-column-2'),
-            document.getElementById('reviews-column-3')
-        ];
-           // Sync the scroll position
-        function syncScroll() {
-            const scrollY = window.scrollY;
-            columns.forEach(column => {
-                scrollValue++;
-                column.scrollTop = 0.01; // Sync the scroll position for each column
-            });
-        }
-
-        // Create an Intersection Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Sync scroll when any column is visible
-                    let scrollValue = 0;
-                    window.addEventListener('scroll', syncScroll);
-                } else {
-                    // Remove the scroll event listener when all columns are not visible
-                    if (!columns.some(col => col.getBoundingClientRect().top < window.innerHeight && col.getBoundingClientRect().bottom > 0)) {
-                        window.removeEventListener('scroll', syncScroll);
-                    }
-                }
-            });
-        });
-     
-        // Observe each column
-        columns.forEach(column => observer.observe(column));
+        loadImages();
         
-         //btn hover on social media NOT WORK?
-        const btn = document.getElementsByClassName('btn')
-        btn.addEventListener('click', () => {
-            btn.setAttribute("height", 10);
-        })
+        const scrollColumns = document.querySelectorAll('.reviews-column');
+let scrollSpeed = 1; // Adjust this value for faster/slower scrolling
 
+
+function autoScroll() {
+    scrollColumns.forEach(column => {
+        column.scrollTop += scrollSpeed; // Increment the scroll position
+
+        // Check if we've reached the bottom
+        if (column.scrollTop + column.clientHeight >= column.scrollHeight) {
+            column.scrollTop = 0; // Reset to the top
+        }
+    });
+
+    requestAnimationFrame(autoScroll); // Call the function again for continuous scrolling
+}
+
+// Start the auto-scrolling
+autoScroll();
     </script>
 </body>

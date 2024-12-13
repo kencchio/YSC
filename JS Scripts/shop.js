@@ -11,10 +11,8 @@ function setActive(button) {
 
 const cardsContainer = document.querySelector(".items-frame");
 
-let info1 = [];
-
 // let shoeData = [ifSale, shoePicture, brandName, shoeName, gender, shoeColor, originalPrice, salePrice, size];
-// let shoeCard = [];
+let shoeCards = [];
 
 function createCard(ifSale, shoePicture, brandName, shoeName, gender, shoeColor, originalPrice, salePrice, size) {
   const card = document.createElement("div");
@@ -48,6 +46,18 @@ function createCard(ifSale, shoePicture, brandName, shoeName, gender, shoeColor,
     </div>
   `;
 
+  shoeCards.push({
+    ifSale,
+    shoePicture,
+    brandName,
+    shoeName,
+    gender,
+    shoeColor,
+    originalPrice,
+    salePrice,
+    size,
+  });
+
   const likeButton = card.querySelector(".like-button");
   likeButton.addEventListener("click", () => {
     if (likeButton.src.includes("/YSC/folder-icons/heart.svg")) {
@@ -57,7 +67,6 @@ function createCard(ifSale, shoePicture, brandName, shoeName, gender, shoeColor,
     }
   });
 
-  // shoeCard.push();
   cardsContainer.appendChild(card);
 }
 
@@ -74,3 +83,5 @@ createCard(false, "nike dunk low sp university red.png", "Nike", "Dunk Low SP", 
 createCard(false, "Nike Mens Air Zoom Gt Cut Academy Ep.png", "Nike", "G.T. Cut Academy", "Men's", "White Sport Red Obsidian", "4,995", "", [4, 8, 9, 10]);
 createCard(false, "new balance mr530ka steel grey.png", "New Balance", "530", "Unisex", "Steel Grey", "6,295", "", [9, 10, 11, 13]);
 createCard(false, "Onitsuka Tiger Tokuten White Moss Green (1).png", "Onitsuka Tiger", "Tokuten", "Men's", "Sail Cacao Wow", "10,799", "", [8.5, 9, 10, 11.5]);
+
+console.log(shoeCards);

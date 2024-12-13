@@ -432,6 +432,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
   top: 0;
   left: 0;
   background-color: var(--variable-collection-secondary);
+  transition: transform 0.3s ease;
 }
 
 .card-desktop .sale-text {
@@ -461,6 +462,10 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
 
 .card-desktop .shoe-img:hover {
   transform: translateY(-20px);
+}
+
+.picture-frame:hover .sale-frame {
+  transform: scale(1.5);
 }
 
 .card-desktop .ellipse {

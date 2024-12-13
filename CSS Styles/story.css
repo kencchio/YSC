@@ -1,3 +1,4 @@
+
 .jumbotron {
   width: 1440px;
   height: 750px;
@@ -46,6 +47,12 @@
   font-family: "Inter-ExtraBold Italic", Helvetica;
   font-weight: 800;
   font-style: italic;
+}
+
+.header-caption .span {
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  font-size: 36px;
 }
 
 .header-caption .yoursneakers {
@@ -301,6 +308,7 @@
   
   .carousel-indicators {
     bottom: -60px;
+    margin-bottom: 0;
   }
   
   .carousel-indicators .featured-indicator,
@@ -343,3 +351,283 @@
     font-size: 14px;
     color: var(--bs-secondary);
   }
+
+  .FOOTER .footer-upper{
+    margin-top: 128px;
+  }
+
+  /* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  
+}
+
+/* Laptop Styles */
+@media (min-width: 769px) and (max-width: 1024.98px) {
+  .jumbotron {
+    width: 100%; 
+    height: auto;
+  }
+
+  .jumbotron img {
+    width: 100%;
+    height: auto;
+
+  }
+
+
+  .header-owner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-owner img {
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .header-owner .img-owner-1 {
+    position: relative;
+    width: 240px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .header-owner .img-owner-2 {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .rectangle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: var(--variable-collection-primary);
+    z-index: -1;
+  }
+
+  
+.header-caption {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding: 0;
+}
+
+.header-caption p {
+  margin-bottom: 0;
+}
+
+.header-caption .ABOUTUS {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 350;
+  color: #000000;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header-caption .text-wrapper {
+  font-family: "Inter-ExtraBold Italic", Helvetica;
+  font-weight: 750;
+  font-style: italic;
+}
+
+.header-caption .span {
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.header-caption .yoursneakers {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+  .Vision-Mission-container {
+    width: 100%;
+    height: auto; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+
+    .Vision-Mission-container p{
+      margin: 0px 0px 12px;
+      }
+
+  .Vision-Mission-container .Vission-Mission-bold{
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #1f1f1f;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Vision-Mission-container .Vission-Mission-bold {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #1f1f1f;
+  font-size: 16px;
+  text-align: center;
+  }
+
+  .Vision-Mission-container .Vission-Mission-normal {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 500;
+  color: #1f1f1f;
+  font-size: 12px;
+  text-align: center;
+  }
+
+  .text-bold {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  }
+
+  .FOOTER .footer-upper{
+    margin-top: 120px;
+  }
+
+  
+.product-section{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+  #product-section-title {
+    margin: 30px 0 60px;
+  }
+  
+  #product-section-title::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    height: 5px;
+    border-radius: 1px;
+    background: var(--bs-accent);
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+
+  .col-sm-3 {
+    padding: 0;
+  }
+  
+  .product-section-carousel .item {
+    color: var(--bs-primary);
+    min-height: 300px;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  
+  .product-section-carousel .card-wrapper {
+    background: var(--bs-light);
+    text-align: center;
+    position: relative;
+    height: 300px;
+    
+  }
+  
+  .product-section-carousel .item .img-box {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+/*images sizing: help please*/
+
+  .product-section-carousel .item img {
+    max-width: 100%;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  
+  .carousel-indicators {
+    bottom: -60px;
+    margin-bottom: 0;
+  }
+  
+  .carousel-indicators .featured-indicator,
+  .carousel-indicators .featured-indicator .active {
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+  }
+
+  .col-md-12{
+    padding: 0;
+  }
+
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100%;
+    width: 40px;
+    background-color: var(--variable-collection-gray-500);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    z-index: 10;
+  }
+
+}
+
+
+/* Tablet Styles */
+@media (min-width: 426px) and (max-width: 768.98px) {
+
+}
+
+/* Mobile Styles */
+@media (max-width: 426.98px) {
+   
+}

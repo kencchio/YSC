@@ -232,14 +232,15 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 66px;
-  padding: 64px 0px;
+  gap: 30px;
+  padding: 64px 36px;
   position: relative;
 }
 
 .feature .frame {
   display: flex;
-  width: 340px;
+  width: fit-content;
+  height: fit-content;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -266,7 +267,7 @@
   flex: 0 0 auto;
 }
 
-.feature .div {
+.feature .fs-body {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -277,7 +278,7 @@
   font-size: 24px;
   text-align: center;
   letter-spacing: 0;
-  line-height: 36px;
+  /* line-height: 36px; */
 }
 
 .feature .text-wrapper {
@@ -291,40 +292,19 @@
   font-weight: 300;
   font-style: italic;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 
-.feature .p {
+.feature .fs-text {
   position: relative;
-  align-self: stretch;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--variable-collection-gray-600);
   font-size: 14px;
   text-align: center;
   letter-spacing: 0;
-  line-height: 0px;
-}
-
-.feature .frame-2 {
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-}
-
-.feature .frame-3 {
-  display: flex;
-  width: 340px;
-  flex: 0 0 auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
+  margin-bottom: 0;
+  white-space: normal;
 }
 
 /* Mobile Styles */
@@ -344,6 +324,29 @@
   }
   .header-caption .tagline2 {
     font-size: 14px;
+  }
+  .feature {
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 40px;
+  }
+
+  .feature .frame {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .feature .fs-body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature .span {
+    font-size: 14px;
+  }
+
+  .feature .fs-text {
+    font-size: 12px;
   }
 }
 
@@ -365,6 +368,32 @@
   .header-caption .tagline2 {
     font-size: 20px;
   }
+  .feature {
+    padding: 24px 0;
+    gap: 10px;
+  }
+
+  .feature .frame {
+    width: 220px;
+  }
+
+  .feature .group {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature .fs-body {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .feature .span {
+    font-size: 12px;
+  }
+
+  .feature .fs-text {
+    font-size: 10px;
+  }
 }
 
 /* Laptop Styles */
@@ -385,6 +414,28 @@
   }
   .header-caption .tagline2 {
     font-size: 24px;
+  }
+
+  .feature .frame {
+    width: 300px;
+  }
+
+  .feature .group {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature .fs-body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature .span {
+    font-size: 14px;
+  }
+
+  .feature .fs-text {
+    font-size: 12px;
   }
 }
 

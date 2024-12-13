@@ -1,13 +1,13 @@
 
 .jumbotron {
-  width: 1440px;
-  height: 750px;
+  width: 100%;
+  height: auto;
 }
 
 .jumbotron img {
   position: relative;
-  width: 1440px;
-  height: 750px;
+  width: 100%;
+  height: auto;
   top: 0;
   left: 0;
   object-fit: cover;
@@ -111,8 +111,8 @@
 .Vision-Mission-container {
     width: 100%;
     height: auto; 
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 16%;
+    padding-right: 16%;
     padding-top: 64px;
     padding-bottom: 64px;
     }
@@ -356,6 +356,19 @@
     margin-top: 128px;
   }
 
+  /**/
+  @media (min-width: 1441px) and (max-width: 1860px){
+    .Vision-Mission-container {
+      width: 100%;
+      height: auto; 
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      }
+
+
+  }
   /* Desktop Styles */
 @media (min-width: 1025px) and (max-width: 1440px) {
   

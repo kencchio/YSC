@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -56,6 +57,256 @@
   line-height: normal;
 }
 
+.category-section {
+  padding: 32px 72px;
+  background-color: var(--variable-collection-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.category-frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 32px;
+}
+
+.category-frame .cat-men {
+  width: 410px;
+  height: 531px;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 29px 27px;
+  border: 3px solid;
+  border-color: var(--variable-collection-dark);
+  background-image: url(/YSC/folder-products/category-pics/cat-men.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-frame .cat-body {
+  position: relative;
+  width: 282px;
+  height: 89px;
+  z-index: 10;
+}
+
+.category-frame .div {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+}
+
+.category-frame .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Nunito Sans-Black", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.category-frame .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 184px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--variable-collection-primary);
+  transition: background-color 0.3s ease;
+}
+
+.category-frame .label {
+  position: relative;
+  width: fit-content;
+  margin-top: -4px;
+  margin-bottom: -2px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-dark);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.category-frame .cat-women {
+  width: 410px;
+  height: 531px;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 29px 27px;
+  border: 3px solid;
+  border-color: var(--variable-collection-dark);
+  background-image: url(/YSC/folder-products/category-pics/cat-women.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-frame .cat-kids {
+  width: 410px;
+  height: 531px;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 29px 27px;
+  border: 3px solid;
+  border-color: var(--variable-collection-dark);
+  background-image: url(/YSC/folder-products/category-pics/cat-kids.jfif);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-frame .cat-men:hover,
+.category-frame .cat-women:hover,
+.category-frame .cat-kids:hover {
+  transform: scale(1.03);
+}
+
+.cat-men .button:hover,
+.cat-women .button:hover,
+.cat-kids .button:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Lighten background on hover */
+}
+
+.cat-men::after,
+.cat-women::after,
+.cat-kids::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ); /* Gradient from transparent to dark */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+}
+
+.cat-men:hover::after,
+.cat-women:hover::after,
+.cat-kids:hover::after {
+  opacity: 1; /* Show the gradient overlay on hover */
+}
+
+.feature {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 64px 36px;
+  position: relative;
+}
+
+.feature .frame {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.feature .group {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-top: -3px;
+}
+
+.feature .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.feature .fs-body {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #242424;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  /* line-height: 36px; */
+}
+
+.feature .text-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.feature .span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  /* line-height: 24px; */
+}
+
+.feature .fs-text {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--variable-collection-gray-600);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  white-space: normal;
+}
+
 /* Mobile Styles */
 @media (max-width: 425.98px) {
   body {
@@ -73,6 +324,29 @@
   }
   .header-caption .tagline2 {
     font-size: 14px;
+  }
+  .feature {
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 40px;
+  }
+
+  .feature .frame {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .feature .fs-body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature .span {
+    font-size: 14px;
+  }
+
+  .feature .fs-text {
+    font-size: 12px;
   }
 }
 
@@ -94,6 +368,32 @@
   .header-caption .tagline2 {
     font-size: 20px;
   }
+  .feature {
+    padding: 24px 0;
+    gap: 10px;
+  }
+
+  .feature .frame {
+    width: 220px;
+  }
+
+  .feature .group {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature .fs-body {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .feature .span {
+    font-size: 12px;
+  }
+
+  .feature .fs-text {
+    font-size: 10px;
+  }
 }
 
 /* Laptop Styles */
@@ -114,6 +414,28 @@
   }
   .header-caption .tagline2 {
     font-size: 24px;
+  }
+
+  .feature .frame {
+    width: 300px;
+  }
+
+  .feature .group {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature .fs-body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .feature .span {
+    font-size: 14px;
+  }
+
+  .feature .fs-text {
+    font-size: 12px;
   }
 }
 

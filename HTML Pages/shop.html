@@ -14,15 +14,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -262,22 +254,22 @@
           </div>
         </div>
       </div>
-      <div class="right-side debug2">
+      <div class="right-side">
         <!-- Filters -->
-        <div class="frame debug">
+        <div class="frame">
           <div class="frame-wrapper">
             <div class="div">
               <button class="div-wrapper active" onclick="setActive(this)">
-                <div class="text-wrapper">ALL</div>
+                <div class="text-wrapper" id="all-category">ALL</div>
               </button>
               <button class="div-wrapper" onclick="setActive(this)">
-                <div class="text-wrapper">MEN’S</div>
+                <div class="text-wrapper" id="mens-category">MEN’S</div>
               </button>
               <button class="div-wrapper" onclick="setActive(this)">
-                <div class="text-wrapper">WOMEN’S</div>
+                <div class="text-wrapper" id="womens-category">WOMEN’S</div>
               </button>
               <button class="div-wrapper" onclick="setActive(this)">
-                <div class="text-wrapper">KIDS’</div>
+                <div class="text-wrapper" id="kids-category">KIDS’</div>
               </button>
             </div>
           </div>

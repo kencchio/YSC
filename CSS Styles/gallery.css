@@ -9,7 +9,6 @@
 
 .shoes-gallery {
   width: 100%;
-  
 }
 .review-gallery {
   width: 80%;
@@ -163,6 +162,7 @@
 
 .show-more:hover{
   opacity: 0.70;
+
 }
 
 .show-more .button {
@@ -214,13 +214,8 @@
 }
 
 .btn:hover{
-  size: 5%;
+  height: 225%;
 }
-
-
-
-
-
 
 /* Mobile Styles */
 @media (max-width: 425px) {

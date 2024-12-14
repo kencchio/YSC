@@ -642,10 +642,7 @@ body {
     background: none;
     border-radius: none;
   }
-  .FOOTER
-    .accordion-item:last-of-type
-    > .accordion-header
-    .accordion-button.collapsed {
+  .FOOTER .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
@@ -698,9 +695,9 @@ body {
 
 /* Tablet Styles */
 @media (min-width: 426px) and (max-width: 768.98px) {
-  body {
+  /* body {
     background-color: lightgreen;
-  }
+  } */
   .NAVBAR {
     padding: 14px 36px;
   }
@@ -757,9 +754,9 @@ body {
 
 /* Laptop Styles */
 @media (min-width: 769px) and (max-width: 1024.98px) {
-  body {
+  /* body {
     background-color: lightyellow;
-  }
+  } */
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap !important;
     flex-flow: row nowrap !important;
@@ -805,7 +802,7 @@ body {
 
 /* Desktop Styles */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  body {
+  /* body {
     background-color: lightcoral;
-  }
+  } */
 }

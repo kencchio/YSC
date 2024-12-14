@@ -145,6 +145,42 @@
   font-family: "Poppins", sans-serif;
 }
 
+.yoursneakers-mobile{
+  display: none;
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.yoursneakers-mobile p{
+  display: none;
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.yoursneakers-mobile span{
+  font-size: 9px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
 .Vision-Mission-container {
     width: 100%;
     height: auto; 
@@ -779,7 +815,7 @@
 
   .yoursneakers-tablet { display: inline-block; }
   .yoursneakers{ display: none; }
-}
+
 
 
   .Vision-Mission-container {
@@ -905,8 +941,8 @@
   .product-section-carousel .col-sm-3 {
     flex: 0 0 33.33%; /* 3 items on tablet */
     max-width: 33.33%;
+  }
 }
-
 
 /* Mobile Styles */
 @media (max-width: 426.98px) {
@@ -915,8 +951,8 @@
   .header-owner {
     display: flex;
     width: 100%;
-    height: 284px;
-    margin-top: 24px;
+    height: 199px;
+    margin-top: 16px;
     padding-left: 5%;
     padding-right: 5%;
     justify-content: center;
@@ -958,4 +994,100 @@
   .product-section-carousel .col-sm-3 {
     flex: 0 0 100%; /* 1 item on mobile */
     max-width: 100%;
-}}}
+  }
+
+   
+  .Vision-Mission-container {
+    width: 100%;
+    height: auto; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
+
+  .Vision-Mission-container .Vission-Mission-bold{
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #1f1f1f;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .Vision-Mission-container .Vission-Mission-normal {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #1f1f1f;
+  font-size: 10px;
+  text-align: center;
+  }
+
+  .text-bold {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  }
+
+  
+  .header-caption {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    padding: 0;
+  }
+  
+  
+.header-caption p {
+  margin-bottom: 0;
+}
+
+.header-caption .ABOUTUS {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.yoursneakers-mobile { display: inline-block; }
+.yoursneakers{ display: none; }
+
+.header-caption .span {
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.carousel-indicators {
+  bottom: -60px;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.carousel-indicators .featured-indicator,
+.carousel-indicators .featured-indicator .active {
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+}
+
+.FOOTER .footer-upper{
+  margin-top: 60px;
+}
+
+}
+

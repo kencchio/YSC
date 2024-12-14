@@ -423,7 +423,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
 
 .card-desktop .sale-frame {
   display: flex;
-  width: 43px;
+  width: 70px;
   height: 19px;
   align-items: center;
   justify-content: center;
@@ -439,9 +439,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
 .card-desktop .sale-text {
   position: relative;
   width: fit-content;
-  margin-top: -1.11px;
-  margin-left: -1.87px;
-  margin-right: -1.87px;
+  margin: 0;
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
@@ -449,7 +447,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
   color: var(--variable-collection-white);
   font-size: 14px;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: 1;
 }
 
 .card-desktop .shoe-img {

@@ -357,8 +357,6 @@ body {
   }
 }
 
-/*In-between of pc -> laptop*/
-
 @media (min-width: 1024px) and (max-width: 1192.98px) {
   #yellow-line{
     background-color: var(--variable-collection-secondary);
@@ -372,9 +370,6 @@ body {
   body {
     background-color: var(--variable-collection-secondary);
   }
- 
-  
-
   .red{
     height: 30vw;
     margin: 0;

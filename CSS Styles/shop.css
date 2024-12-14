@@ -78,8 +78,8 @@
 }
 
 .frame .div-wrapper.active {
-  background-color: var(--variable-collection-dark);
-  color: white;
+  background-color: var(--variable-collection-primary);
+  color: var(--variable-collection-dark);
 }
 
 .frame .clickable-view-all {

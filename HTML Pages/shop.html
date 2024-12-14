@@ -46,10 +46,22 @@
       <!-- Right Part of the Navbar -->
       <div class="d-flex align-items-center right">
         <div class="search-box">
-          <div class="text-wrapper-3">Search...</div>
-          <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+          <input type="text" class="form-control" id="search-input" placeholder="Search..." />
+          <button id="search-icon-btn" class="">
+            <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+          </button>
         </div>
-        <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+        <div class="search-box-l">
+          <button id="search-icon-btn-l" class="">
+            <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+          </button>
+          <div id="search-bar" class="search-bar">
+            <input type="text" class="form-control search-popup" placeholder="Search..." />
+            <button class="close-btn" id="close-search">
+              <img class="icon-search" src="/YSC/folder-icons/collapse-accordion.svg" alt="Close" />
+            </button>
+          </div>
+        </div>
         <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
         <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
       </div>
@@ -61,130 +73,106 @@
           <div class="title-refineresults">
             <img src="/YSC/folder-icons/REFINERESULTS.svg" alt="" />
           </div>
-          <p class="showing-number-text">Showing <span class="currentQty">69</span> results out of <span class="allQty">87</span>.</p>
+          <p class="showing-number-text">
+            Showing <b><span class="currentQty">0</span></b> results out of <b><span class="allQty">0</span></b
+            >.
+          </p>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                class="accordion-button bold collapsed acc-transp"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                BRAND
-              </button>
+              <button class="accordion-button bold collapsed acc-transp" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">BRAND</button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionBrand">
               <div class="accordion-body">
-                <input type="radio" class="btn-check" name="brand-options" id="all-brand-option" autocomplete="off" checked />
-                <label class="btn btn-outline-danger filter-option-radio" for="all-brand-option">All</label>
+                <input type="radio" class="btn-check" name="brand-options" id="allbrand-option" autocomplete="off" checked />
+                <label class="btn btn-outline-danger filter-option-radio" for="allbrand-option">All</label>
 
                 <input type="radio" class="btn-check" name="brand-options" id="adidas-option" autocomplete="off" />
                 <label class="btn btn-outline-danger filter-option-radio" for="adidas-option">Adidas</label>
 
-                <input type="radio" class="btn-check" name="brand-options" id="new-balance-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="new-balance-option">New Balance</label>
+                <input type="radio" class="btn-check" name="brand-options" id="newbalance-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="newbalance-option">New Balance</label>
 
                 <input type="radio" class="btn-check" name="brand-options" id="nike-option" autocomplete="off" />
                 <label class="btn btn-outline-danger filter-option-radio" for="nike-option">Nike</label>
 
-                <input type="radio" class="btn-check" name="brand-options" id="onitsuka-tiger-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="onitsuka-tiger-option">Onitsuka Tiger</label>
+                <input type="radio" class="btn-check" name="brand-options" id="onitsukatiger-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="onitsukatiger-option">Onitsuka Tiger</label>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                class="accordion-button bold collapsed acc-transp"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                SIZE
-              </button>
+              <button class="accordion-button bold collapsed acc-transp" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">SIZE</button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSize">
               <div class="accordion-body">
-                <input type="radio" class="btn-check" name="size-options" id="all-size-option" autocomplete="off" checked />
-                <label class="btn btn-outline-danger filter-option-radio" for="all-size-option">All</label>
+                <input type="radio" class="btn-check" name="size-options" id="allsize-option" autocomplete="off" checked />
+                <label class="btn btn-outline-danger filter-option-radio" for="allsize-option">All</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-4-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-4-option">4 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us4-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us4-option">4 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-4.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-4.5-option">4.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us4.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us4.5-option">4.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-5-option">5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us5-option">5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-5.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-5.5-option">5.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us5.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us5.5-option">5.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-6-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-6-option">6 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us6-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us6-option">6 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-6.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-6.5-option">6.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us6.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us6.5-option">6.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-7-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-7-option">7 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us7-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us7-option">7 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-7.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-7.5-option">7.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us7.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us7.5-option">7.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-8-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-8-option">8 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us8-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us8-option">8 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-8.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-8.5-option">8.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us8.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us8.5-option">8.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-9-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-9-option">9 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us9-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us9-option">9 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-9.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-9.5-option">9.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us9.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us9.5-option">9.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-10-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-10-option">10 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us10-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us10-option">10 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-10.5-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-10.5-option">10.5 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us10.5-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us10.5-option">10.5 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-11-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-11-option">11 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us11-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us11-option">11 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-12-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-12-option">12 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us12-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us12-option">12 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-13-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-13-option">13 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us13-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us13-option">13 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-14-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-14-option">14 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us14-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us14-option">14 US</label>
 
-                <input type="radio" class="btn-check" name="size-options" id="us-15-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="us-15-option">15 US</label>
+                <input type="radio" class="btn-check" name="size-options" id="us15-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="us15-option">15 US</label>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                class="accordion-button bold collapsed acc-transp"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                COLOR
-              </button>
+              <button class="accordion-button bold collapsed acc-transp" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">COLOR</button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionColor">
               <div class="accordion-body">
@@ -222,33 +210,24 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                class="accordion-button bold collapsed acc-transp-last"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour"
-                aria-expanded="false"
-                aria-controls="flush-collapseFour"
-              >
-                PRICE
-              </button>
+              <button class="accordion-button bold collapsed acc-transp-last" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">PRICE</button>
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPrice">
               <div class="accordion-body accordion-body-last">
-                <input type="radio" class="btn-check" name="price-options" id="all-price-option" autocomplete="off" checked />
-                <label class="btn btn-outline-danger filter-option-radio" for="all-price-option">All</label>
+                <input type="radio" class="btn-check" name="price-options" id="allprice-option" autocomplete="off" checked />
+                <label class="btn btn-outline-danger filter-option-radio" for="allprice-option">All</label>
 
-                <input type="radio" class="btn-check" name="price-options" id="lt-5k-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="lt-5k-option">&lt; ₱5,000</label>
+                <input type="radio" class="btn-check" name="price-options" id="lt5k-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="lt5k-option">&lt; ₱5,000</label>
 
-                <input type="radio" class="btn-check" name="price-options" id="5k-8k-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="5k-8k-option">₱5,001 - ₱8,000</label>
+                <input type="radio" class="btn-check" name="price-options" id="5k8k-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="5k8k-option">₱5,001 - ₱8,000</label>
 
-                <input type="radio" class="btn-check" name="price-options" id="8k-12k-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="8k-12k-option">₱8,001 - ₱12,000</label>
+                <input type="radio" class="btn-check" name="price-options" id="8k12k-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="8k12k-option">₱8,001 - ₱12,000</label>
 
-                <input type="radio" class="btn-check" name="price-options" id="gt-12k-option" autocomplete="off" />
-                <label class="btn btn-outline-danger filter-option-radio" for="gt-12k-option"> &gt; ₱12,001</label>
+                <input type="radio" class="btn-check" name="price-options" id="gt12k-option" autocomplete="off" />
+                <label class="btn btn-outline-danger filter-option-radio" for="gt12k-option"> &gt; ₱12,001</label>
               </div>
             </div>
           </div>
@@ -299,5 +278,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     <script src="/YSC/JS Scripts/shop.js"></script>
+    <!-- <script src="/YSC/JS Scripts/globals.js"></script> -->
   </body>
 </html>

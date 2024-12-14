@@ -57,7 +57,8 @@
   line-height: normal;
 }
 
-.frame-newarrivals {
+.frame-newarrivals,
+.frame-ourproducts {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,17 +67,21 @@
   margin: auto;
   margin-top: 64px;
 }
-.frame-newarrivals .title-newarrivals {
+.frame-newarrivals .title-newarrivals,
+.frame-ourproducts .title-ourproducts {
   position: relative;
   flex: 0 0 auto;
 }
-.frame-newarrivals .div {
+.frame-newarrivals .div-viewall,
+.frame-ourproducts .div-viewall {
   display: inline-flex;
   align-items: center;
   position: relative;
   flex: 0 0 auto;
+  cursor: pointer;
 }
-.frame-newarrivals .clickable-view-all {
+.frame-newarrivals .clickable-view-all,
+.frame-ourproducts .clickable-view-all {
   position: relative;
   width: 90px;
   height: 27px;
@@ -89,15 +94,20 @@
   letter-spacing: 0;
   line-height: normal;
 }
-.frame-newarrivals .element-outlined {
+.frame-newarrivals .element-outlined,
+.frame-ourproducts .element-outlined {
   position: relative;
   width: 13px;
   height: 13px;
 }
 
-.new-arrival-cards {
+.new-arrival-cards,
+.our-products-cards {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 1152px;
+  padding: 32px 0;
+  margin: auto;
   justify-content: center;
   align-items: center;
   gap: 30px;

@@ -78,7 +78,7 @@
 }
 
 .frame .div-wrapper.active {
-  background-color: var(--variable-collection-primary);
+  background-color: var(--variable-collection-dark);
   color: white;
 }
 
@@ -588,4 +588,71 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
 
 .card-desktop #original-price-st {
   text-decoration: line-through;
+}
+/*Phone styles*/
+@media (max-width: 425.98px) {
+  body {
+    background-color: var(--variable-collection-light);
+  }
+  .frame .frame-wrapper {
+    width: auto;
+  }
+  .frame .div-wrapper {
+    padding: 0 7.5px;
+  }
+  .frame {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .frame .fields {
+    width: 280px;
+    margin: 10px;
+  }
+  .main {
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-side {
+    width: auto;
+  }
+  .items-frame {
+    justify-content: center;
+  }
+  .card-desktop {
+    width: 280px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 426px) and (max-width: 768.98px) {
+  .items-frame {
+    justify-content: center;
+  }
+  .frame .frame-wrapper {
+    width: 300px;
+  }
+  .frame .div-wrapper {
+    padding: 6px 10px;
+  }
+  .refineresults-parent {
+    padding-right: 7.5px;
+  }
+}
+
+/* Laptop Styles */
+@media (min-width: 769px) and (max-width: 1024.98px) {
+  .frame {
+    width: 73vw;
+    margin-right: 10px;
+  }
+  .right-side {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1192.98px) {
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
 }

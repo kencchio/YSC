@@ -144,8 +144,6 @@ const shoeData = [
   },
 ];
 
-export default shoeData;
-
 const cardsContainer = document.querySelector(".items-frame");
 
 // Function to reset all filters to their default state

@@ -539,9 +539,9 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 426.98px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
   .NAVBAR {
     gap: 10px;
     padding: 14px 22px;

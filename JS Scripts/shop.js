@@ -259,13 +259,7 @@ function setActive(button) {
   const category = button.querySelector(".text-wrapper").innerText;
 
   // Call displayCards with the selected category and the currently selected filters
-  displayCards(
-    category,
-    getSelectedBrand(),
-    getSelectedSize(),
-    getSelectedColors(),
-    getSelectedPriceRange()
-  );
+  displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
 }
 
 // Add event listeners to category buttons
@@ -283,24 +277,13 @@ function displayCards(category, brand, size, colors, priceRange) {
 
   // Filter the shoeData based on the selected category and brand
   const filteredShoes = shoeData.filter((shoe) => {
-    const matchesCategory =
-      category === "ALL" ||
-      (category === "MEN’S" &&
-        (shoe.gender === "Men's" || shoe.gender === "Unisex")) ||
-      (category === "WOMEN’S" &&
-        (shoe.gender === "Women's" || shoe.gender === "Unisex")) ||
-      (category === "KIDS’" && shoe.gender === "Kid's");
+    const matchesCategory = category === "ALL" || (category === "MEN’S" && (shoe.gender === "Men's" || shoe.gender === "Unisex")) || (category === "WOMEN’S" && (shoe.gender === "Women's" || shoe.gender === "Unisex")) || (category === "KIDS’" && shoe.gender === "Kid's");
 
-    const matchesBrand =
-      brand === "allbrand" || shoe.brandName.toLowerCase() === brand;
+    const matchesBrand = brand === "allbrand" || shoe.brandName.toLowerCase() === brand;
 
-    const matchesSize =
-      size === "allsize" ||
-      shoe.size.includes(parseFloat(size.replace("us", "")));
+    const matchesSize = size === "allsize" || shoe.size.includes(parseFloat(size.replace("us", "")));
 
-    const matchesColor =
-      colors.includes("allcolor") ||
-      colors.some((color) => shoe.shoeColor.toLowerCase().includes(color));
+    const matchesColor = colors.includes("allcolor") || colors.some((color) => shoe.shoeColor.toLowerCase().includes(color));
 
     const price = parseFloat(shoe.originalPrice.replace(/,/g, "")); // Convert price to a number
 
@@ -323,20 +306,9 @@ function displayCards(category, brand, size, colors, priceRange) {
     }
 
     // Check if the shoe matches the search query only if there is a search query
-    const matchesSearch =
-      searchQuery === "" ||
-      shoe.brandName.toLowerCase().includes(searchQuery) ||
-      shoe.shoeName.toLowerCase().includes(searchQuery) ||
-      shoe.shoeColor.toLowerCase().includes(searchQuery);
+    const matchesSearch = searchQuery === "" || shoe.brandName.toLowerCase().includes(searchQuery) || shoe.shoeName.toLowerCase().includes(searchQuery) || shoe.shoeColor.toLowerCase().includes(searchQuery);
 
-    return (
-      matchesCategory &&
-      matchesBrand &&
-      matchesSize &&
-      matchesColor &&
-      matchesPrice &&
-      matchesSearch
-    ); // Return true if all conditions are met
+    return matchesCategory && matchesBrand && matchesSize && matchesColor && matchesPrice && matchesSearch; // Return true if all conditions are met
   });
 
   // Update the showing number text
@@ -363,17 +335,11 @@ function displayCards(category, brand, size, colors, priceRange) {
     card.innerHTML = `
       <div class='top-group'>
         <div class='picture-and-sale-frame'>
-        ${
-          shoe.ifSale
-            ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>`
-            : ""
-        }
+        ${shoe.ifSale ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>` : ""}
           <div class='picture-frame'>
             <div class='overlap-group'>
               <div class='ellipse'></div>
-              <img class='shoe-img' src='/YSC/folder-products/card-pics/${
-                shoe.shoePicture
-              }' />
+              <img class='shoe-img' src='/YSC/folder-products/card-pics/${shoe.shoePicture}' />
             </div>
           </div>
         </div>
@@ -385,21 +351,11 @@ function displayCards(category, brand, size, colors, priceRange) {
             <div class='text-wrapper-3' id='shoe-name'>${shoe.shoeName}</div>
             <img class='element-outlined-action like-button' src='/YSC/folder-icons/heart.svg' id='like-button' />
           </div>
-          <div class='text-wrapper-4' id='gender'>${
-            shoe.gender
-          } / <span id='shoe-color'>${shoe.shoeColor}</span></div>
+          <div class='text-wrapper-4' id='gender'>${shoe.gender} / <span id='shoe-color'>${shoe.shoeColor}</span></div>
         </div>
         <div class='price-frame'>
-          ${
-            shoe.ifSale
-              ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>`
-              : ""
-          }
-          ${
-            shoe.ifSale
-              ? `<div class='text-wrapper-6' id='original-price-st'>₱ ${shoe.originalPrice}</div>`
-              : `<div class='text-wrapper-6' id='original-price'>₱ ${shoe.originalPrice}</div>`
-          }
+          ${shoe.ifSale ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>` : ""}
+          ${shoe.ifSale ? `<div class='text-wrapper-6' id='original-price-st'>₱ ${shoe.originalPrice}</div>` : `<div class='text-wrapper-6' id='original-price'>₱ ${shoe.originalPrice}</div>`}
         </div>
       </div>
     `;
@@ -421,17 +377,10 @@ function displayCards(category, brand, size, colors, priceRange) {
 const searchInput = document.getElementById("search-input");
 searchInput.addEventListener("input", () => {
   const activeCategoryButton = document.querySelector(".div-wrapper.active");
-  const category =
-    activeCategoryButton.querySelector(".text-wrapper").innerText;
+  const category = activeCategoryButton.querySelector(".text-wrapper").innerText;
 
   // Call displayCards with the current filters and the search query
-  displayCards(
-    category,
-    getSelectedBrand(),
-    getSelectedSize(),
-    getSelectedColors(),
-    getSelectedPriceRange()
-  );
+  displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
 });
 
 // Add event listeners to brand radio buttons
@@ -439,15 +388,8 @@ const brandOptions = document.querySelectorAll('input[name="brand-options"]');
 brandOptions.forEach((option) => {
   option.addEventListener("change", () => {
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
-    const category =
-      activeCategoryButton.querySelector(".text-wrapper").innerText;
-    displayCards(
-      category,
-      getSelectedBrand(),
-      getSelectedSize(),
-      getSelectedColors(),
-      getSelectedPriceRange()
-    );
+    const category = activeCategoryButton.querySelector(".text-wrapper").innerText;
+    displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
   });
 });
 
@@ -456,15 +398,8 @@ const sizeOptions = document.querySelectorAll('input[name="size-options"]');
 sizeOptions.forEach((option) => {
   option.addEventListener("change", () => {
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
-    const category =
-      activeCategoryButton.querySelector(".text-wrapper").innerText;
-    displayCards(
-      category,
-      getSelectedBrand(),
-      getSelectedSize(),
-      getSelectedColors(),
-      getSelectedPriceRange()
-    );
+    const category = activeCategoryButton.querySelector(".text-wrapper").innerText;
+    displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
   });
 });
 
@@ -473,15 +408,8 @@ const colorOptions = document.querySelectorAll('input[type="checkbox"]');
 colorOptions.forEach((option) => {
   option.addEventListener("change", () => {
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
-    const category =
-      activeCategoryButton.querySelector(".text-wrapper").innerText;
-    displayCards(
-      category,
-      getSelectedBrand(),
-      getSelectedSize(),
-      getSelectedColors(),
-      getSelectedPriceRange()
-    );
+    const category = activeCategoryButton.querySelector(".text-wrapper").innerText;
+    displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
   });
 });
 
@@ -490,15 +418,8 @@ const priceOptions = document.querySelectorAll('input[name="price-options"]');
 priceOptions.forEach((option) => {
   option.addEventListener("change", () => {
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
-    const category =
-      activeCategoryButton.querySelector(".text-wrapper").innerText;
-    displayCards(
-      category,
-      getSelectedBrand(),
-      getSelectedSize(),
-      getSelectedColors(),
-      getSelectedPriceRange()
-    );
+    const category = activeCategoryButton.querySelector(".text-wrapper").innerText;
+    displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
   });
 });
 

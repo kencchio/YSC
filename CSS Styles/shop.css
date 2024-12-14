@@ -400,6 +400,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
   display: flex;
   flex-direction: column;
   width: 240px;
+  height: 370px;
   align-items: center;
   justify-content: center;
   gap: 12px;

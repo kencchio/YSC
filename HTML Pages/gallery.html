@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top NAVBAR">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,9 +47,21 @@
         <div class="d-flex align-items-center right">
           <div class="search-box">
             <input type="text" class="form-control search-input" placeholder="Search...">
-            <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+            <button id="search-icon-btn" class="">
+              <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
+            </button>
           </div>
-          <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+          <div class="search-box-l">
+            <button id="search-icon-btn-l" class="">
+              <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+            </button>
+            <div id="search-bar" class="search-bar">
+              <input type="text" class="form-control search-popup" id="search-input" placeholder="Search...">
+              <button class="close-btn" id="close-search">
+                <img class="icon-search" src="/YSC/folder-icons/collapse-accordion.svg" alt="Close" />
+              </button>
+            </div>
+          </div>
           <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
           <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
         </div>
@@ -129,8 +141,12 @@
             <img src="/YSC/folder-products/gallery-pics/rate_title.svg">
         </div>
         <div class="social-media-container yellow" id="yellow-line">
+          <a class = "social-link" href="https://www.facebook.com/profile.php?id=100085788162548" target="_blank">
             <img class="btn" src="/YSC/folder-icons/rate-us-facebook.svg">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/senyor_pelpi" target="_blank">
             <img class="btn" src="/YSC/folder-icons/rate-us-instagram.svg">
+          </a>
             <img class="btn" src="/YSC/folder-icons/rate-us-tiktok.svg">
         </div>
     </div>

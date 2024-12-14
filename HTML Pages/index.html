@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid NAVBAR">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top NAVBAR">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -68,6 +68,11 @@
     </div>
   </nav>
 
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+  </div>
+  
+
   <!-- Header Banner -->
   <div class="header-caption container-fluid">
     <div class="text-wrapper">Since 2022</div>
@@ -102,8 +107,8 @@
         <div class="cat-body">
           <div class="div">
             <div class="text-wrapper">MEN’S</div>
-            <button class="button" onclick="location.href='shop.html?category=MEN’S'">
-              <div class="label">SHOP COLLECTION</div>
+            <button class="button">
+              <div class="label" id="mens-category">SHOP COLLECTION</div>
             </button>
           </div>
         </div>
@@ -111,16 +116,16 @@
       <div class="cat-women">
         <div class="cat-body">
           <div class="text-wrapper">WOMEN’S</div>
-          <button class="button" onclick="location.href='shop.html?category=WOMEN’S'">
-            <div class="label">SHOP COLLECTION</div>
+          <button class="button">
+            <div class="label" id="womens-category">SHOP COLLECTION</div>
           </button>
         </div>
       </div>
       <div class="cat-kids">
         <div class="cat-body">
           <div class="text-wrapper">KIDS’</div>
-          <button class="button" onclick="location.href='shop.html?category=KIDS’'">
-            <div class="label">SHOP COLLECTION</div>
+          <button class="button">
+            <div class="label"  id="kids-category">SHOP COLLECTION</div>
           </button>
         </div>
       </div>
@@ -319,6 +324,24 @@
   <div id="search-results" class="search-results">
 
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Function to handle category selection
+    function setCategory(category) {
+        sessionStorage.setItem("selectedCategory", category); // Store selected category in session storage
+        window.location.href = "shop.html"; // Redirect to shop page
+    }
+
+    // Add event listeners to category buttons
+    const mensButton = document.getElementById("mens-category");
+    const womensButton = document.getElementById("womens-category");
+    const kidsButton = document.getElementById("kids-category");
+
+    mensButton.addEventListener("click", () => setCategory("MEN’S"));
+    womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
+    kidsButton.addEventListener("click", () => setCategory("KIDS’"));
+});
+  </script>
 
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>
   <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>

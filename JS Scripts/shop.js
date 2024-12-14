@@ -147,15 +147,6 @@ const shoeData = [
 document.addEventListener("DOMContentLoaded", () => {
   const cardsContainer = document.querySelector(".items-frame");
 
-  // Function to get URL parameters
-  function getUrlParameter(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-  }
-
-  // Get the category from the URL
-  const categoryFromUrl = getUrlParameter("category");
-
   // Function to set active category button and update display
   function setActiveCategory(button) {
     const buttons = document.querySelectorAll(".div-wrapper");
@@ -171,25 +162,22 @@ document.addEventListener("DOMContentLoaded", () => {
     displayCards(category, getSelectedBrand(), getSelectedSize(), getSelectedColors(), getSelectedPriceRange());
   }
 
-  // Initial display of cards based on URL or default to "ALL"
-  if (categoryFromUrl) {
-    const categoryButtons = document.querySelectorAll(".div-wrapper");
-    categoryButtons.forEach((button) => {
-      const buttonCategory = button.querySelector(".text-wrapper").innerText;
-      if (buttonCategory === categoryFromUrl) {
-        setActiveCategory(button);
-        updateDisplay(buttonCategory);
-      }
-    });
-  } else {
-    updateDisplay("ALL");
-  }
+  // Retrieve the selected category from session storage
+  const selectedCategory = sessionStorage.getItem("selectedCategory") || "ALL"; // Default to "ALL" if not set
 
-  // Add event listeners to category buttons
+  // Set the active category based on the retrieved value
   const categoryButtons = document.querySelectorAll(".div-wrapper");
   categoryButtons.forEach((button) => {
-    button.addEventListener("click", () => setActiveCategory(button)); // Call setActiveCategory instead of setActive
-    updateDisplay(category);
+    const buttonCategory = button.querySelector(".text-wrapper").innerText;
+    if (buttonCategory === selectedCategory) {
+      setActiveCategory(button);
+      updateDisplay(buttonCategory);
+    }
+  });
+
+  // Add event listeners to category buttons
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => setActiveCategory(button));
   });
 
   // Function to reset all filters to their default state
@@ -260,7 +248,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to display cards based on filters
   function displayCards(category, brand, size, colors, priceRange) {
-    cardsContainer.innerHTML = ""; // Clear the container first
     const searchQuery = getSearchQuery(); // Get the current search query
 
     // Filter the shoeData based on the selected category and brand
@@ -301,6 +288,9 @@ document.addEventListener("DOMContentLoaded", () => {
     currentQtyElement.innerText = filteredShoes.length; // Update current quantity
     allQtyElement.innerText = shoeData.length; // Update total quantity
 
+    // Clear previous cards
+    cardsContainer.innerHTML = "";
+
     // Check if there are no results
     if (filteredShoes.length === 0) {
       const noResultsMessage = document.createElement("div");
@@ -334,8 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           <div class='text-wrapper-3' id='shoe-name'>${shoe.shoeName}</div>
                           <img class='element-outlined-action like-button' src='/YSC/folder-icons/heart.svg' id='like-button' />
                       </div>
-                      <div class='text-wrapper-4' id='gender'>${shoe.gender} / <span id='shoe-color'>${shoe.shoeColor}</span></div>
-                  </div>
+                      <div class='text-wrapper-4' id='gender'>${shoe.gender} / <span id='shoe-color'>${shoe.shoeColor}</span></div </div>
                   <div class='price-frame'>
                       ${shoe.ifSale ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>` : ""}
                       ${shoe.ifSale ? `<div class='text-wrapper-6' id='original-price-st'>₱ ${shoe.originalPrice}</div>` : `<div class='text-wrapper-6' id='original-price'>₱ ${shoe.originalPrice}</div>`}

@@ -65,7 +65,6 @@
   width: 1152px;
   margin: auto;
   margin-top: 64px;
-  margin-bottom: 32px;
 }
 .frame-newarrivals .title-newarrivals {
   position: relative;
@@ -96,17 +95,29 @@
   height: 13px;
 }
 
-.box {
-  width: 1440px;
-  height: 62px;
+.new-arrival-cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
 }
-.box .yellow-rectangle-home {
-  position: absolute;
-  width: 1440px;
-  height: 62px;
-  top: 0;
-  left: 0;
-  z-index: -1;
+
+.box {
+  position: relative; /* Establish a positioning context */
+  width: 100%; /* Ensure it takes full width */
+  height: auto; /* Adjust height as needed */
+}
+.yellow-rectangle-home {
+  position: absolute; /* Position it absolutely */
+  width: 100%; /* Make it cover the entire area */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Send it behind other elements */
+  top: 50%; /* Move down 50% of the parent's height */
+  left: 50%; /* Move right 50% of the parent's width */
+  transform: translate(-50%, -50%);
 }
 
 .category-section {

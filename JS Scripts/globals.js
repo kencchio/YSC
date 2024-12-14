@@ -52,5 +52,3 @@ function startTimeout() {
     }
   }, 5000); // Set the duration (5000 ms = 5 seconds)
 }
-
-// SEARCHING

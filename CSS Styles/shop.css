@@ -82,7 +82,7 @@
   color: white;
 }
 
-.frame .text-wrapper {
+.frame .clickable-view-all {
   position: relative;
   width: fit-content;
   font-family: "Inter-Regular", Helvetica;

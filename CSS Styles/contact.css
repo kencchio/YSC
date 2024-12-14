@@ -510,6 +510,17 @@ small {
   .feature .fs-text {
     font-size: 10px;
   }
+
+  .middle-frame {
+    flex-direction: column;
+    width: 768px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .header-caption .have-a-question-or {
+    font-size: 15px;
+  }
 }
 
 /* Laptop Styles */

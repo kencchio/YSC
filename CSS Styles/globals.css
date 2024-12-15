@@ -104,13 +104,12 @@ body {
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
-.navbar .navbar-nav .active-nav{
+.navbar-before-scroll .nav-link.active-nav{
   color: var(--variable-collection-primary) !important;
 }
 
-.navbar-before-scroll .nav-link.active-nav,
-.navbar-after-scroll .nav-link.active-nav {
-  color: var(--variable-collection-primary) !important;
+.navbar-after-scroll .nav-link.active-nav{
+  color: var(--variable-collection-secondary) !important;
 }
 
 .navbar-before-scroll .navbar-brand-img {

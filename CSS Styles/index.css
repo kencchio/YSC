@@ -1,3 +1,11 @@
+.body {
+  margin-top: 50px;
+}
+
+/*layout for parallax jumbotron
+jumbotron with class of parallax
+inside is a button container set to center and end
+inside inside is the buttons*/
 .jumbotron {
   color: white;
   background-image: url("/YSC/folder-products/JB1.jpg");
@@ -8,7 +16,97 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 30px 0;
+}
+.jumbotron-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 32px;
+}
+
+.outer-container {
+  display: flex;
+
+  height: 100vh;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.yellow-btn {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 184px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--variable-collection-primary);
+  transition: background-color 0.3s ease;
+  color: var(--variable-collection-dark);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -4px;
+  margin-bottom: -2px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-dark);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.yellow-btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+.button-container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  flex: 1; /* Make buttons take equal space */
+}
+
+.btn:hover {
+  background-color: rgba(0, 86, 179, 0.8); /* Darker shade on hover */
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .btn {
+    font-size: 14px; /* Smaller font size on small screens */
+    padding: 8px 16px; /* Smaller padding */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .btn {
+    font-size: 15px; /* Medium font size on medium screens */
+    padding: 9px 18px; /* Medium padding */
+  }
 }
 
 .header-caption {
@@ -467,6 +565,11 @@
     margin-bottom: 8px;
     margin-top: 48px;
   }
+  .button-container {
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 /* Tablet Styles */
@@ -548,6 +651,9 @@
   .frame-newarrivals,
   .frame-ourproducts {
     margin-top: 45px;
+  }
+  .button-container {
+    margin-bottom: 5%;
   }
 }
 

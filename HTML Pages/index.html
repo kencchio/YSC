@@ -13,9 +13,7 @@
 </head>
 
 <body>
-  <nav
-    class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top navbar-before-scroll shadow-0 NAVBAR"
-    id="main-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top NAVBAR">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +22,6 @@
     <!-- Left Part of the Navbar [Brand Logo] -->
     <a class="navbar-brand left" href="index.html">
       <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
-      <img class="navbar-brand-img-white" src="/YSC/folder-icons/navbar-logo-desktop-white.svg" alt="Logo">
     </a>
 
     <!-- Collapsible Navbar Items -->
@@ -50,50 +47,36 @@
     <!-- Right Part of the Navbar -->
     <div class="d-flex align-items-center right">
       <div class="search-box">
-        <input type="text" class="form-control" id="search-input" placeholder="Search...">
+        <input type="text" class="form-control search-input" placeholder="Search...">
         <button id="search-icon-btn" class="">
           <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
         </button>
       </div>
       <div class="search-box-l">
         <button id="search-icon-btn-l" class="">
-          <img class="search-btn" id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
-          <img class="search-btn-white" id="icon-search-1-white" src="/YSC/folder-icons/search-white.svg" alt="Search">
+          <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
         </button>
         <div id="search-bar" class="search-bar">
-          <input type="text" class="form-control search-popup" placeholder="Search...">
+          <input type="text" class="form-control search-popup" id="search-input" placeholder="Search...">
           <button class="close-btn" id="close-search">
             <img class="icon-search" src="/YSC/folder-icons/collapse-accordion.svg" alt="Close" />
           </button>
         </div>
       </div>
       <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
-      <img class="icon-shopping-bag-white" src="/YSC/folder-icons/shopping-bag-white.svg">
       <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
-      <img class="icon-user-profile-white" src="/YSC/folder-icons/user-profile-white.svg">
     </div>
   </nav>
 
-  <!-- Jumbotron 
-  <div class="jumbotron-container">
-    <img src> 
-    <div class="jumbotron">
-    </div>
-      <div class="category-frame">
-        <button class="button">
-          <div class="label">aaaa</div>
-        </button>
-      </div>
-      <div class="category-frame">
-        <button class="button">
-          <div class="label">aaaa</div>
-        </button>
-      </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid outer-container parallax">
+    <div class="button-container">
+      <button class="yellow-btn"><a class="nav-link" href="shop.html">SHOP NOW</a></button>
+      <button class="yellow-btn"><a class="nav-link" href="story.html">OUR STORY</a></button>
   </div>
-
-      -->
-
-
+    
+  </div>
+  
 
   <!-- Header Banner -->
   <div class="header-caption container-fluid">
@@ -115,6 +98,8 @@
     <div class="new-arrival-cards">
 
     </div>
+
+
   </div>
 
   <!-- Browse Category Section -->
@@ -143,7 +128,7 @@
         <div class="cat-body">
           <div class="text-wrapper">KIDS’</div>
           <button class="button">
-            <div class="label" id="kids-category">SHOP COLLECTION</div>
+            <div class="label"  id="kids-category">SHOP COLLECTION</div>
           </button>
         </div>
       </div>
@@ -344,24 +329,23 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Function to handle category selection
-      function setCategory(category) {
+    // Function to handle category selection
+    function setCategory(category) {
         sessionStorage.setItem("selectedCategory", category); // Store selected category in session storage
         window.location.href = "shop.html"; // Redirect to shop page
-      }
+    }
 
-      // Add event listeners to category buttons
-      const mensButton = document.getElementById("mens-category");
-      const womensButton = document.getElementById("womens-category");
-      const kidsButton = document.getElementById("kids-category");
+    // Add event listeners to category buttons
+    const mensButton = document.getElementById("mens-category");
+    const womensButton = document.getElementById("womens-category");
+    const kidsButton = document.getElementById("kids-category");
 
-      mensButton.addEventListener("click", () => setCategory("MEN’S"));
-      womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
-      kidsButton.addEventListener("click", () => setCategory("KIDS’"));
-    });
+    mensButton.addEventListener("click", () => setCategory("MEN’S"));
+    womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
+    kidsButton.addEventListener("click", () => setCategory("KIDS’"));
+});
   </script>
 
-  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>
   <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <script src="/YSC/JS Scripts/index.js"></script>

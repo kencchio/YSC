@@ -1,3 +1,7 @@
+body{
+  margin-top: 150px;
+}
+
 .header-caption {
   display: flex;
   margin-top: 45px;

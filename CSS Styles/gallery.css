@@ -406,10 +406,7 @@ body {
 
 /* Laptop Styles */
 @media (min-width: 769px) and (max-width: 1024.98px) {
-  body {
-    background-color: var(--variable-collection-secondary);
-  }
-  /*BINAGO ko lng container to RED*/
+
   .social-media-container {
     background-color: var(--variable-collection-secondary);
   }
@@ -496,9 +493,7 @@ body {
 /*yellow naman body sa long for maayos na section sa yellow*/
 /* Desktop Styles */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    background-color: var(--variable-collection-secondary);
-  }
+
   .red{
     height: 30vw;
     margin: 0;

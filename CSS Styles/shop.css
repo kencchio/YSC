@@ -4,15 +4,10 @@
 }
 
 .filter-option-radio:hover {
-  background-color: #dc3545; /* Red background on hover */
-  color: #fff; /* White text on hover */
-  border-color: #dc3545; /* Red border on hover */
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
 }
-
-/* .btn-check:hover {
-  background-color: #dc3545; 
-  color: #fff; 
-} */
 
 .main {
   margin: 128px 5%;
@@ -212,16 +207,6 @@
   border-radius: 0px;
 }
 
-/* .btn-check:checked + .btn,
-:not(.btn-check) + .btn:active,
-.btn:first-child:active,
-.btn.active,
-.btn.show {
-  color: red;
-  background-color: red;
-  border-color: red;
-} */
-
 .acc-transp {
   border: 1px solid var(--variable-collection-dark);
   border-bottom: none;
@@ -273,16 +258,16 @@
 }
 
 .square-div {
-  display: inline-block; /* Make it inline-block to allow margin */
-  width: 40px; /* Set the width of the square */
-  height: 40px; /* Set the height of the square */
-  border: solid 10px; /* Border style */
-  border-radius: 0; /* Square corners */
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: solid 10px;
+  border-radius: 0;
   border-style: inset;
-  margin: 4px; /* Margin around the square */
-  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
-  cursor: pointer; /* Change cursor to pointer */
-  background-color: transparent; /* Default background color */
+  margin: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 /* Define colors for each square */

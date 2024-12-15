@@ -1,6 +1,4 @@
-/*USE Padding instead of MARGIN
-  CUS body is red and will show red in page
-*/
+
 * {
   margin: 0;
   padding: 0;
@@ -116,9 +114,9 @@ body {
 
 
 .reviews-column{
-  flex: 1; /* Each column takes equal space */
-  height: 600px; /* Set a fixed height for the column */
-  overflow-y: auto; /* Enable vertical scrolling */
+  flex: 1; /* equal space */
+  height: 600px; 
+  overflow-y: auto; 
   padding: 0px;
   padding-top:0;
   padding-bottom: 0;
@@ -126,7 +124,7 @@ body {
 }
 
 .reviews-column img {
-  width: 100%; /* Make images responsive */
+  width: 100%; /* mages responsive */
   margin-bottom: 10px; /* Space between images */
   border-radius: 5px;
   
@@ -204,10 +202,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/*PS: magkaiba yunng margin per color sa sections 
-  Yellow Height is big to contain columns of reviews
-  todo: change vh -> px
-*/
+
 
 /*overflow class to be used with javascript*/
 .overflow{
@@ -264,7 +259,7 @@ body {
 .btn:hover{
   transform: translateY(-30px) scale(1.05);
 }
-/*ENTIRE BODY is RED cus layout on rateus will be too big*/
+
 /* Mobile Styles */
 @media (max-width: 425.98px) {
   .OURGALLERY img{
@@ -512,7 +507,6 @@ body {
   
 }
 
-/*yellow naman body sa long for maayos na section sa yellow*/
 /* Desktop Styles */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
@@ -523,5 +517,3 @@ body {
   }
 
 }
-
-/*READ: dont increase the width after 1440; the yellow container will enlarge too much*/

@@ -231,8 +231,6 @@ body {
 
 }
 .red {
-  padding-top: 2.5%;
-  padding-bottom: 5%;
   background-color: var(--variable-collection-secondary);
 
 }
@@ -449,8 +447,6 @@ body {
 
   .red{
     margin: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
   }
 
   .rate-us {
@@ -514,7 +510,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1440px) {
 
   .red{
-    height: 30vw;
+    height: 20vw;
     margin: 0;
     padding-top: 0;
   }

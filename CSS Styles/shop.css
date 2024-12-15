@@ -207,51 +207,51 @@
   border-radius: 0px;
 }
 
-.acc-transp {
+.filtering .acc-transp {
   border: 1px solid var(--variable-collection-dark);
   border-bottom: none;
 }
 
-.acc-transp-last {
+.filtering .acc-transp-last {
   border: 1px solid var(--variable-collection-dark);
 }
 
-.accordion-item {
+.filtering .accordion-item {
   background: none;
 }
 
-.accordion-body {
+.filtering .accordion-body {
   border: 1px solid var(--variable-collection-dark);
   border-bottom: none;
 }
 
-.accordion-body-last {
+.filtering .accordion-body-last {
   border: 1px solid var(--variable-collection-dark);
   border-top: none;
 }
 
-.accordion-button {
+.filtering .accordion-button {
   background: none;
   color: var(--variable-collection-dark);
 }
 
-.accordion-button::after {
+.filtering .accordion-button::after {
   background-image: url(/YSC/folder-icons/plus-accordion.svg);
 }
 
-.accordion-button:not(.collapsed)::after {
+.filtering .accordion-button:not(.collapsed)::after {
   background-image: url(/YSC/folder-icons/collapse-accordion.svg);
   transform: var(--bs-accordion-btn-icon-transform);
 }
 
-.accordion-button:not(.collapsed) {
+.filtering .accordion-button:not(.collapsed) {
   box-shadow: none;
   outline: none;
   background: none;
   color: var(--variable-collection-dark);
 }
 
-.accordion-button:focus {
+.filtering .accordion-button:focus {
   box-shadow: none;
   outline: none;
   background: none;

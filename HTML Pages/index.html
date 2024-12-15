@@ -71,7 +71,7 @@
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
   </div>
-  
+
 
   <!-- Header Banner -->
   <div class="header-caption container-fluid">
@@ -93,8 +93,6 @@
     <div class="new-arrival-cards">
 
     </div>
-
-
   </div>
 
   <!-- Browse Category Section -->
@@ -123,7 +121,7 @@
         <div class="cat-body">
           <div class="text-wrapper">KIDS’</div>
           <button class="button">
-            <div class="label"  id="kids-category">SHOP COLLECTION</div>
+            <div class="label" id="kids-category">SHOP COLLECTION</div>
           </button>
         </div>
       </div>
@@ -324,21 +322,21 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-    // Function to handle category selection
-    function setCategory(category) {
+      // Function to handle category selection
+      function setCategory(category) {
         sessionStorage.setItem("selectedCategory", category); // Store selected category in session storage
         window.location.href = "shop.html"; // Redirect to shop page
-    }
+      }
 
-    // Add event listeners to category buttons
-    const mensButton = document.getElementById("mens-category");
-    const womensButton = document.getElementById("womens-category");
-    const kidsButton = document.getElementById("kids-category");
+      // Add event listeners to category buttons
+      const mensButton = document.getElementById("mens-category");
+      const womensButton = document.getElementById("womens-category");
+      const kidsButton = document.getElementById("kids-category");
 
-    mensButton.addEventListener("click", () => setCategory("MEN’S"));
-    womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
-    kidsButton.addEventListener("click", () => setCategory("KIDS’"));
-});
+      mensButton.addEventListener("click", () => setCategory("MEN’S"));
+      womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
+      kidsButton.addEventListener("click", () => setCategory("KIDS’"));
+    });
   </script>
 
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>

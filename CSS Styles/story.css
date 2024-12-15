@@ -1,3 +1,7 @@
+body {
+  margin-top: 110px;
+}
+
 .jumbotron {
   width: 100%;
   height: auto;
@@ -1066,5 +1070,9 @@
   .header-caption .header-title {
     width: 250px;
     height: 25px;
+  }
+
+  body {
+    margin-top: 80px;
   }
 }

@@ -285,6 +285,9 @@ body {
     height: 45vw;
     margin-bottom: 80vw;
   }
+  body {
+    margin-top: 35px;
+  }
   
 }
 

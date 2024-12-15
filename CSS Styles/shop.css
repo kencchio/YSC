@@ -15,7 +15,7 @@
 } */
 
 .main {
-  margin: 64px 5%;
+  margin: 128px 5%;
   display: flex;
   justify-content: space-between;
   font-family: "Inter-Regular", Helvetica;
@@ -593,6 +593,9 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
   body {
     background-color: var(--variable-collection-light);
   }
+  .main {
+    margin: 80px 5%;
+  }
   .frame .frame-wrapper {
     width: auto;
   }
@@ -624,6 +627,9 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
 
 /* Tablet Styles */
 @media (min-width: 426px) and (max-width: 768.98px) {
+  .main {
+    margin: 100px 5%;
+  }
   .items-frame {
     justify-content: center;
   }

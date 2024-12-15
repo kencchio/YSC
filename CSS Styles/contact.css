@@ -219,7 +219,7 @@ body {
 }
 
 .form-control:not(:focus) {
-  border: solid 1px var(--variable-collection-gray-600);
+  /* border: solid 1px var(--variable-collection-gray-600); */
 }
 
 .middle-frame .form-select {

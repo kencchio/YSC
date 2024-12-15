@@ -476,6 +476,91 @@ small {
     width: 100%;
     padding: 0px 36px;
   }
+
+  body{
+    margin-top: 80px;
+  }
+
+  .header-caption .header-body {
+    font-size: 10px;
+    width: 100%;
+    padding: 10px 72px;
+    margin-bottom: 0;
+  }
+
+  .middle-frame .frame-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 45px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: var(--variable-collection-primary);
+  }
+
+  
+.middle-frame .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.middle-frame .div-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.middle-frame .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  height: 36px;
+  margin-top: -1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.middle-frame .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.middle-frame .span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.middle-frame .text-wrapper-4 {
+  font-size: 12px;
+}
+
 }
 
 /* Tablet Styles */
@@ -515,7 +600,7 @@ small {
     width: 768px;
     align-items: center;
     gap: 0;
-    margin-bottom: 30px;
+    padding-top: 10px;
   }
 
   .header-caption .have-a-question-or {
@@ -541,6 +626,21 @@ small {
     font-size: 14px;
     width: 100%;
     padding: 0px 72px;
+  }
+
+  .header-caption {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+  }
+
+  body{
+    margin-top: 120px;
   }
 }
 
@@ -572,6 +672,38 @@ small {
   }
   .middle-frame .form-section {
     width: 500px;
+  }
+
+  body{
+    margin-top: 120px;
+  }
+
+  .header-caption .header-title {
+    width: 240px;
+    height: 25px;
+  }
+
+  .header-caption .header-body {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .middle-frame {
+    display: flex;
+    padding-top: 20px;
+    margin: auto;
+    width: 90%;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
   }
 }
 

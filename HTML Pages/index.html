@@ -13,9 +13,7 @@
 </head>
 
 <body>
-  <nav
-    class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top navbar-before-scroll shadow-0 NAVBAR"
-    id="main-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top NAVBAR">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +22,6 @@
     <!-- Left Part of the Navbar [Brand Logo] -->
     <a class="navbar-brand left" href="index.html">
       <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
-      <img class="navbar-brand-img-white" src="/YSC/folder-icons/navbar-logo-desktop-white.svg" alt="Logo">
     </a>
 
     <!-- Collapsible Navbar Items -->
@@ -50,7 +47,7 @@
     <!-- Right Part of the Navbar -->
     <div class="d-flex align-items-center right">
       <div class="search-box">
-        <input type="text" class="form-control" id="search-input" placeholder="Search...">
+        <input type="text" class="form-control search-input" placeholder="Search...">
         <button id="search-icon-btn" class="">
           <img class="icon-search" src="/YSC/folder-icons/search.svg" alt="Search" />
         </button>
@@ -61,16 +58,14 @@
           <img class="search-btn-white" id="icon-search-1" src="/YSC/folder-icons/search-white.svg" alt="Search">
         </button>
         <div id="search-bar" class="search-bar">
-          <input type="text" class="form-control search-popup" placeholder="Search...">
+          <input type="text" class="form-control search-popup" id="search-input" placeholder="Search...">
           <button class="close-btn" id="close-search">
             <img class="icon-search" src="/YSC/folder-icons/collapse-accordion.svg" alt="Close" />
           </button>
         </div>
       </div>
       <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
-      <img class="icon-shopping-bag-white" src="/YSC/folder-icons/shopping-bag-white.svg">
       <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
-      <img class="icon-user-profile-white" src="/YSC/folder-icons/user-profile-white.svg">
     </div>
   </nav>
 
@@ -83,14 +78,29 @@
 -->
 
   <!-- Header Banner -->
-  <div class="header-caption container-fluid">
+  <!-- <div class="header-caption container-fluid">
     <div class="text-wrapper">Since 2022</div>
     <div class="div-wrapper">
       <p class="tagline">Fast. Smooth. Value 4 Money</p>
     </div>
     <p class="tagline2">That’s what we call #YSCguarantee</p>
-  </div>
+  </div> -->
 
+  <!-- Jumbotron  -->
+  <section class="py-10 bg-auto bg-light hero-graphics">
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center h-100 hb">
+      <!-- Header Banner -->
+      <div class="header-caption text-center">
+        <div class="text-wrapper">Since 2022</div>
+        <div class="div-wrapper">
+          <p class="tagline">Fast. Smooth. Value 4 Money</p>
+        </div>
+        <p class="tagline2">That’s what we call #YSCguarantee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
   <div class="frame-newarrivals">
     <img class="title-newarrivals" src="/YSC/folder-icons/title-newarrivals.svg" />
     <div class="div-viewall">
@@ -98,10 +108,12 @@
       <img class="element-outlined" src="/YSC/folder-icons/right.svg" />
     </div>
   </div>
-  <div class="box"><img class="yellow-rectangle-home" src="/YSC/folder-icons/yellow-rectangle-home.svg" />
+  <div class="arrival-container"><img class="yellow-rectangle-home" src="/YSC/folder-icons/yellow-rectangle-home.svg" />
     <div class="new-arrival-cards">
 
     </div>
+
+
   </div>
 
   <!-- Browse Category Section -->
@@ -346,7 +358,6 @@
     });
   </script>
 
-  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>
   <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <script src="/YSC/JS Scripts/index.js"></script>

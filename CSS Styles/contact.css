@@ -1,4 +1,4 @@
-body{
+body {
   margin-top: 150px;
 }
 
@@ -88,7 +88,7 @@ body{
   margin-top: -1px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: black;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
@@ -215,10 +215,6 @@ body{
 
 .form-control:focus {
   box-shadow: none;
-  border: solid 1px var(--variable-collection-gray-600);
-}
-
-.form-control:not(:focus) {
   border: solid 1px var(--variable-collection-gray-600);
 }
 
@@ -483,7 +479,7 @@ small {
     padding: 0px 36px;
   }
 
-  body{
+  body {
     margin-top: 80px;
   }
 
@@ -506,67 +502,65 @@ small {
     background-color: var(--variable-collection-primary);
   }
 
-  
-.middle-frame .text-wrapper {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+  .middle-frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
 
-.middle-frame .div-4 {
-  position: relative;
-  align-self: stretch;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+  .middle-frame .div-4 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
 
-.middle-frame .text-wrapper-2 {
-  position: relative;
-  align-self: stretch;
-  height: 36px;
-  margin-top: -1px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+  .middle-frame .text-wrapper-2 {
+    position: relative;
+    align-self: stretch;
+    height: 36px;
+    margin-top: -1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
 
-.middle-frame .text-wrapper-3 {
-  position: relative;
-  align-self: stretch;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-}
+  .middle-frame .text-wrapper-3 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+  }
 
-.middle-frame .span {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0;
-}
+  .middle-frame .span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
 
-.middle-frame .text-wrapper-4 {
-  font-size: 12px;
-}
-
+  .middle-frame .text-wrapper-4 {
+    font-size: 12px;
+  }
 }
 
 /* Tablet Styles */
@@ -645,7 +639,7 @@ small {
     position: relative;
   }
 
-  body{
+  body {
     margin-top: 120px;
   }
 }
@@ -680,7 +674,7 @@ small {
     width: 500px;
   }
 
-  body{
+  body {
     margin-top: 120px;
   }
 
@@ -701,7 +695,7 @@ small {
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .middle-frame {
     display: flex;
     padding-top: 20px;

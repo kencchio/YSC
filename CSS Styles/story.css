@@ -406,6 +406,9 @@ body {
 
 /* Laptop Styles */
 @media (min-width: 769px) and (max-width: 1024.98px) {
+  body{
+    margin-top: 125px;
+  }
   .jumbotron {
     width: 100%;
     height: auto;
@@ -652,10 +655,20 @@ body {
     transition: opacity 0.3s;
     z-index: 10;
   }
+
+  .header-caption .header-title {
+    width: 100%;
+    height: 30px;
+  }
 }
 
 /* Tablet Styles */
 @media (min-width: 426px) and (max-width: 768.98px) {
+
+  body {
+    margin-top: 100px;
+  }
+
   .header-owner {
     display: flex;
     width: 100%;
@@ -1073,6 +1086,6 @@ body {
   }
 
   body {
-    margin-top: 80px;
+    margin-top: 140px;
   }
 }

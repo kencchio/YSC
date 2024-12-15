@@ -256,7 +256,7 @@ body {
     background-color: var(--variable-collection-secondary);
   }
   .OURGALLERY img{
-    width: 50%;
+    width: 75%;
     height: auto;
   }
   .rate-us img{
@@ -282,26 +282,63 @@ body {
     height: 150vw;
   }
   .red{
-    height: 45vw;
+    height: 30vw;
     margin-bottom: 80vw;
   }
   body {
-    margin-top: 35px;
+    margin-top: 85px;
+  }
+
+  .header-caption .description {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+  }
+
+  .header-caption .OURGALLERY {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    width: 100%;
+    line-height: normal;
+    margin: 0;
   }
   
+  .rate-us img{
+    width: 30%;
+    height: auto;
+  }
+
+  .btn{
+    padding-top: 5vw;
+    width: 300px;
+}
 }
 
 /* Tablet Styles */
 @media (min-width: 426px) and (max-width: 768.98px) {
   body {
     background-color: var(--variable-collection-secondary);
-    
+    margin-top: 45px;
   }
-  .OURGALLERY img{
-    width: 80%;
-  }
+
   .rate-us img{
-    width: 25%;
+    width: 18%;
     height: auto;
   }
   .social-media-container {
@@ -321,19 +358,50 @@ body {
     height: 100vw;
   }
   .red{
-    height: 50vw;
+    height: 45vw;
     margin-right: 5vw;
     margin-left: 5vw;
   }
   .btn{
     padding-top: 5vw;
-    width: 300px;
+    width: 250px;
 }
 
-.OURGALLERY img{
-  width: 70%;
+  .OURGALLERY img{
+  width: 45%;
   height: auto;
-}
+  }
+
+
+  .header-caption .OURGALLERY {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    width: 100%;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .header-caption .description {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 
 
 }
@@ -349,9 +417,7 @@ body {
     background-color: var(--variable-collection-secondary);
   }
   .btn{
-    padding: 10vw;
-    padding-bottom: 0px;
-    padding-top: 25px;
+    width: 300px;
   }
   .overflowing{
     height: 175vw;
@@ -359,14 +425,68 @@ body {
   .shoes-gallery{
     columns: 3 200px;
   }
-  .yellow{
-    height: 85vw;
-  }
+
   .red{
-    height: 55vw;
+    height: 20vw;
     margin: 0;
     margin-top: 20px;
   }
+
+  .rate-us {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .OURGALLERY img{
+    width: 40%;
+    height: auto;
+   }
+
+   .header-caption .description {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .header-caption .OURGALLERY {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    width: 100%;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  body{
+    margin-top: 50px;
+  }
+
+  .rate-us img{
+    width: 15%;
+    height: auto;
+  }
+  
 }
 
 @media (min-width: 1024px) and (max-width: 1192.98px) {

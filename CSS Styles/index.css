@@ -1,14 +1,20 @@
-.jumbotron {
+.hero-graphics {
   color: white;
-  background-image: url("/YSC/folder-products/JB1.jpg");
+  background-image: url("/YSC/folder-products/hero-section.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
-  display: flex;
+  height: 50vw;
+  /* display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-end; */
   padding: 30px 0;
+  position: relative;
+}
+
+.hb {
+  padding: 0;
+  color: white;
 }
 
 .header-caption {
@@ -28,7 +34,7 @@
   align-self: stretch;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
-  color: #000000;
+  color: var(--variable-collection-primary);
   font-size: 24px;
   text-align: center;
   letter-spacing: 0;
@@ -51,7 +57,7 @@
   width: fit-content;
   font-family: "Inter-Black", Helvetica;
   font-weight: 900;
-  color: #000000;
+  color: black;
   font-size: 48px;
   text-align: center;
   letter-spacing: 0;
@@ -63,7 +69,7 @@
   align-self: stretch;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
-  color: #000000;
+  color: var(--variable-collection-primary);
   font-size: 30px;
   text-align: center;
   letter-spacing: 0;
@@ -128,18 +134,18 @@
   z-index: 1;
 }
 
-.box {
-  position: relative; /* Establish a positioning context */
-  width: 100%; /* Ensure it takes full width */
-  height: auto; /* Adjust height as needed */
+.arrival-container {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 .yellow-rectangle-home {
-  position: absolute; /* Position it absolutely */
-  width: 100%; /* Make it cover the entire area */
-  height: auto; /* Maintain aspect ratio */
-  z-index: -1; /* Send it behind other elements */
-  top: 50%; /* Move down 50% of the parent's height */
-  left: 50%; /* Move right 50% of the parent's width */
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 

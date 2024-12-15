@@ -334,35 +334,10 @@
     </div>
   </div>
 
-
-  <!-- RESULTS -->
-  <div id="search-results" class="search-results">
-
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Function to handle category selection
-      function setCategory(category) {
-        sessionStorage.setItem("selectedCategory", category); // Store selected category in session storage
-        window.location.href = "shop.html"; // Redirect to shop page
-      }
-
-      // Add event listeners to category buttons
-      const mensButton = document.getElementById("mens-category");
-      const womensButton = document.getElementById("womens-category");
-      const kidsButton = document.getElementById("kids-category");
-
-      mensButton.addEventListener("click", () => setCategory("MEN’S"));
-      womensButton.addEventListener("click", () => setCategory("WOMEN’S"));
-      kidsButton.addEventListener("click", () => setCategory("KIDS’"));
-    });
-  </script>
-
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>
   <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <script src="/YSC/JS Scripts/index.js"></script>
   <script src="/YSC/JS Scripts/globals.js"></script>
-
 </body>
 
 </html>

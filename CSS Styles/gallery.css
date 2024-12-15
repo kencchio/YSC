@@ -252,9 +252,6 @@ body {
 /*ENTIRE BODY is RED cus layout on rateus will be too big*/
 /* Mobile Styles */
 @media (max-width: 425.98px) {
-  body {
-    background-color: var(--variable-collection-secondary);
-  }
   .OURGALLERY img{
     width: 75%;
     height: auto;

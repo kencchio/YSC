@@ -467,12 +467,6 @@
 
 /* Tablet Styles */
 @media (min-width: 426px) and (max-width: 768px) {
-<<<<<<< Updated upstream
-  /* body {
-    background-color: lightgreen;
-  } */
-=======
->>>>>>> Stashed changes
   .header-caption .text-wrapper {
     font-size: 16px;
   }
@@ -555,13 +549,6 @@
 
 /* Laptop Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
-<<<<<<< Updated upstream
-  /* body {
-    background-color: lightyellow;
-  } */
-
-=======
->>>>>>> Stashed changes
   .header-caption .text-wrapper {
     font-size: 20px;
   }
@@ -641,10 +628,4 @@
 
 /* Desktop Styles */
 @media (min-width: 1025px) and (max-width: 1440px) {
-<<<<<<< Updated upstream
-  /* body {
-    background-color: lightcoral;
-  } */
-=======
->>>>>>> Stashed changes
 }

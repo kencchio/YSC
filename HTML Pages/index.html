@@ -110,7 +110,7 @@
       <div class="cat-men">
         <div class="cat-body">
           <div class="text-wrapper">MEN’S</div>
-          <button class="button">
+          <button class="button" id="mens-button">
             <div class="label" id="mens-category">SHOP COLLECTION</div>
           </button>
         </div>
@@ -118,7 +118,7 @@
       <div class="cat-women">
         <div class="cat-body">
           <div class="text-wrapper">WOMEN’S</div>
-          <button class="button">
+          <button class="button" id="womens-button">
             <div class="label" id="womens-category">SHOP COLLECTION</div>
           </button>
         </div>
@@ -126,7 +126,7 @@
       <div class="cat-kids">
         <div class="cat-body">
           <div class="text-wrapper">KIDS’</div>
-          <button class="button">
+          <button class="button" id="kids-button">
             <div class="label" id="kids-category">SHOP COLLECTION</div>
           </button>
         </div>
@@ -321,6 +321,27 @@
     </div>
   </div>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get the buttons by their IDs
+      const mensButton = document.getElementById("mens-button");
+      const womensButton = document.getElementById("womens-button");
+      const kidsButton = document.getElementById("kids-button");
+
+      // Add click event listeners to each button
+      mensButton.addEventListener("click", () => {
+        window.location.href = "shop.html?category=mens"; // Redirect to shop.html with category parameter
+      });
+
+      womensButton.addEventListener("click", () => {
+        window.location.href = "shop.html?category=womens"; // Redirect to shop.html with category parameter
+      });
+
+      kidsButton.addEventListener("click", () => {
+        window.location.href = "shop.html?category=kids"; // Redirect to shop.html with category parameter
+      });
+    });
+  </script>
   <script type="module" src="/YSC/JS Scripts/shop.js"></script>
   <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <script src="/YSC/JS Scripts/index.js"></script>

@@ -604,7 +604,7 @@ input[type="checkbox"]:not(:checked) + .square-div-gray {
   }
   .frame {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0 20px 0;
   }
   .frame .fields {
     width: 280px;

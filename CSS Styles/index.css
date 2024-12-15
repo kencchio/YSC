@@ -413,8 +413,8 @@
   }
   .feature {
     flex-direction: column;
-    padding: 32px 0;
-    gap: 40px;
+    padding: 0 0;
+    gap: 0px;
   }
 
   .feature .frame {
@@ -438,6 +438,8 @@
   .our-products-cards {
     flex-direction: column;
     width: 90%;
+    padding: 20px 0;
+    gap: 10px;
   }
   .yellow-rectangle-home {
     display: none;
@@ -446,26 +448,44 @@
     flex-direction: column;
   }
   .frame-newarrivals .title-newarrivals,
-  .frame-ourproducts,
   .category-title,
   .title-ourproducts {
-    width: 100%;
-    height: 35px;
+    width: 200px;
+    height: 20px;
   }
   .category-section {
     padding: 36px 64px;
+    margin-bottom: 36px;
   }
-
+  .category-frame .cat-women,
+  .category-frame .cat-men,
+  .category-frame .cat-kids {
+    width: 350px;
+    height: 331px;
+    padding: 25px 10px;
+  }
+  .category-frame .text-wrapper {
+    font-size: 20px;
+  }
+  .category-frame .cat-body {
+    width: 100%;
+    height: 60px;
+  }
+  .category-frame .button {
+    width: 100%;
+  }
+  .frame-newarrivals,
   .frame-ourproducts {
-    flex-direction: column;
-    gap: 17.5px;
-    margin-bottom: 50px;
-  }
-  .frame-newarrivals {
-    flex-direction: column;
+    flex-direction: row;
     gap: 17.5px;
     margin-bottom: 8px;
-    margin-top: 48px;
+    margin-top: 15px;
+  }
+  .frame-newarrivals .clickable-view-all,
+  .frame-ourproducts .clickable-view-all {
+    font-size: 12px;
+    height: fit-content;
+    width: 50px;
   }
 }
 
@@ -526,18 +546,29 @@
     height: 331px;
     padding: 25px 10px;
   }
+
   .category-frame .cat-men {
     padding-bottom: 30px;
   }
   .category-frame .text-wrapper {
-    font-size: 24px;
-  }
-  .category-frame .div {
-    width: 50px;
+    font-size: 20px;
   }
   .category-frame .cat-body {
-    width: 100%;
+    width: 80%;
     height: 55px;
+  }
+  .category-frame .button {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+  }
+
+  .category-frame .label {
+    font-size: 12px;
+    line-height: 16px;
   }
   .category-title,
   .title-ourproducts,
@@ -547,7 +578,13 @@
   }
   .frame-newarrivals,
   .frame-ourproducts {
-    margin-top: 45px;
+    margin-top: 30px;
+  }
+  .frame-newarrivals .clickable-view-all,
+  .frame-ourproducts .clickable-view-all {
+    font-size: 16px;
+    height: fit-content;
+    width: 70px;
   }
 }
 

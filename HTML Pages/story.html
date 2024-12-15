@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top NAVBAR">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid fixed-top navbar-before-scroll shadow-0 NAVBAR" id="main-navbar">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,6 +23,7 @@
         <!-- Left Part of the Navbar [Brand Logo] -->
         <a class="navbar-brand left" href="index.html">
           <img class="navbar-brand-img" src="/YSC/folder-icons/navbar-logo-desktop.svg" alt="Logo" />
+          <img class="navbar-brand-img-white" src="/YSC/folder-icons/navbar-logo-desktop-white.svg" alt="Logo">
         </a>
     
         <!-- Collapsible Navbar Items -->
@@ -55,7 +56,8 @@
           </div>
           <div class="search-box-l">
             <button id="search-icon-btn-l" class="">
-              <img id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+              <img class="search-btn" id="icon-search-l" src="/YSC/folder-icons/search.svg" alt="Search" />
+              <img class="search-btn-white" id="icon-search-1-white" src="/YSC/folder-icons/search-white.svg" alt="Search">
             </button>
             <div id="search-bar" class="search-bar">
               <input type="text" class="form-control search-popup" id="search-input" placeholder="Search...">
@@ -65,7 +67,9 @@
             </div>
           </div>
           <img class="icon-shopping-bag" src="/YSC/folder-icons/shopping-bag.svg" alt="Shopping Bag" />
+          <img class="icon-shopping-bag-white" src="/YSC/folder-icons/shopping-bag-white.svg">
           <img class="icon-user-profile" src="/YSC/folder-icons/user-profile.svg" alt="User  Profile" />
+          <img class="icon-user-profile-white" src="/YSC/folder-icons/user-profile-white.svg">
         </div>
       </nav>
 
@@ -417,6 +421,7 @@
         </div>
     </div>
     <script src="/YSC/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="/YSC/JS Scripts/globals.js"></script>
 </body>
 
 </html>

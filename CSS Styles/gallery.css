@@ -256,7 +256,7 @@ body {
     background-color: var(--variable-collection-secondary);
   }
   .OURGALLERY img{
-    width: 50%;
+    width: 70%;
     height: auto;
   }
   .rate-us img{
@@ -286,7 +286,21 @@ body {
     margin-bottom: 80vw;
   }
   body {
-    margin-top: 35px;
+    margin-top: 85px;
+  }
+
+  .header-caption .description {
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
 }

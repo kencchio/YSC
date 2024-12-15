@@ -114,9 +114,10 @@ form.addEventListener("submit", (event) => {
   let orderValid = orderPatt.test(orderInp.value);
   let phoneValid = phonePatt.test(phoneInp.value);
   let concernValid = concernInp.value != "null";
-  let messageValue = messageInp.value != "";
+  let messageValid = messageInp.value != "";
 
   let errorMess = document.querySelector(".form-error");
+  let successMess = document.querySelector('.form-success');
 
   if (
     nameValid &&
@@ -124,10 +125,19 @@ form.addEventListener("submit", (event) => {
     orderValid &&
     phoneValid &&
     concernValid &&
-    messageValue
+    messageValid
   ) {
     errorMess.setAttribute("style", "display: none;");
+    successMess.setAttribute('style', 'display: inline;')
+    
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = ""; 
+    document.getElementById("order-number").value = ""; 
+    document.getElementById("phone-number").value = "";
+    document.getElementById("concern").selectedIndex = 4;
+    document.getElementById("message").value = "";
   } else {
     errorMess.setAttribute("style", "display:inline;");
+    successMess.setAttribute('style', 'display: none;')
   }
 });

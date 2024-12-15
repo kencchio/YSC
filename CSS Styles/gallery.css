@@ -9,6 +9,7 @@
 }
 body {
   background-color: var(--variable-collection-secondary);
+  margin-top: 75px;
 }
 
 .shoes-gallery {

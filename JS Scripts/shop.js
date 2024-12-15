@@ -146,45 +146,6 @@ const shoeData = [
 
 const cardsContainer = document.querySelector(".items-frame");
 
-// Function to reset all filters to their default state
-function resetFilters() {
-  // Reset brand filters
-  const brandOptions = document.querySelectorAll('input[name="brand-options"]');
-  brandOptions.forEach((option) => {
-    option.checked = false; // Uncheck all brand options
-  });
-
-  // Reset size filters
-  const sizeOptions = document.querySelectorAll('input[name="size-options"]');
-  sizeOptions.forEach((option) => {
-    option.checked = false; // Uncheck all size options
-  });
-
-  // Reset color filters
-  const colorOptions = document.querySelectorAll('input[type="checkbox"]');
-  colorOptions.forEach((option) => {
-    option.checked = false; // Uncheck all color options
-  });
-
-  // Reset price filters
-  const priceOptions = document.querySelectorAll('input[name="price-options"]');
-  priceOptions.forEach((option) => {
-    option.checked = false; // Uncheck all price options
-  });
-
-  // Set the first price option as checked (All)
-  document.getElementById("allprice-option").checked = true;
-
-  // Clear the search input
-  document.getElementById("search-input").value = "";
-}
-
-// Function to get the search query
-function getSearchQuery() {
-  const searchInput = document.getElementById("search-input");
-  return searchInput.value.toLowerCase(); // Return the search query in lowercase
-}
-
 // Function to set active category button
 function setActive(button) {
   const buttons = document.querySelectorAll(".div-wrapper");
@@ -246,40 +207,9 @@ function getSelectedPriceRange() {
   return "allprice"; // Default to "all" if none selected
 }
 
-// Function to set active category button and update display
-function setActive(button) {
-  const buttons = document.querySelectorAll(".div-wrapper");
-  buttons.forEach((btn) => {
-    btn.classList.remove("active");
-  });
-
-  button.classList.add("active");
-
-  // Get the category from the button's text
-  const category = button.querySelector(".text-wrapper").innerText;
-
-  // Call displayCards with the selected category and the currently selected filters
-  displayCards(
-    category,
-    getSelectedBrand(),
-    getSelectedSize(),
-    getSelectedColors(),
-    getSelectedPriceRange()
-  );
-}
-
-// Add event listeners to category buttons
-const categoryButtons = document.querySelectorAll(".div-wrapper");
-categoryButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    setActive(button); // Set the active category and update display
-  });
-});
-
+// Function to display cards based on category and brand
 function displayCards(category, brand, size, colors, priceRange) {
   cardsContainer.innerHTML = ""; // Clear the container first
-
-  const searchQuery = getSearchQuery(); // Get the current search query
 
   // Filter the shoeData based on the selected category and brand
   const filteredShoes = shoeData.filter((shoe) => {
@@ -322,38 +252,14 @@ function displayCards(category, brand, size, colors, priceRange) {
         matchesPrice = true; // If "allprice", include all
     }
 
-    // Check if the shoe matches the search query only if there is a search query
-    const matchesSearch =
-      searchQuery === "" ||
-      shoe.brandName.toLowerCase().includes(searchQuery) ||
-      shoe.shoeName.toLowerCase().includes(searchQuery) ||
-      shoe.shoeColor.toLowerCase().includes(searchQuery);
-
     return (
       matchesCategory &&
       matchesBrand &&
       matchesSize &&
       matchesColor &&
-      matchesPrice &&
-      matchesSearch
-    ); // Return true if all conditions are met
+      matchesPrice
+    ); // Return true if both conditions are met
   });
-
-  // Update the showing number text
-  const currentQtyElement = document.querySelector(".currentQty");
-  const allQtyElement = document.querySelector(".allQty");
-
-  currentQtyElement.innerText = filteredShoes.length; // Update current quantity
-  allQtyElement.innerText = shoeData.length; // Update total quantity
-
-  // Check if there are no results
-  if (filteredShoes.length === 0) {
-    const noResultsMessage = document.createElement("div");
-    noResultsMessage.className = "no-results";
-    noResultsMessage.innerText = "No results found.";
-    cardsContainer.appendChild(noResultsMessage);
-    return; // Exit the function early
-  }
 
   // Create and append the filtered cards
   filteredShoes.forEach((shoe) => {
@@ -417,30 +323,16 @@ function displayCards(category, brand, size, colors, priceRange) {
   });
 }
 
-// Add event listener for the search input
-const searchInput = document.getElementById("search-input");
-searchInput.addEventListener("input", () => {
-  const activeCategoryButton = document.querySelector(".div-wrapper.active");
-  const category =
-    activeCategoryButton.querySelector(".text-wrapper").innerText;
-
-  // Call displayCards with the current filters and the search query
-  displayCards(
-    category,
-    getSelectedBrand(),
-    getSelectedSize(),
-    getSelectedColors(),
-    getSelectedPriceRange()
-  );
-});
-
 // Add event listeners to brand radio buttons
 const brandOptions = document.querySelectorAll('input[name="brand-options"]');
 brandOptions.forEach((option) => {
   option.addEventListener("change", () => {
+    // Get the currently active category
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
     const category =
       activeCategoryButton.querySelector(".text-wrapper").innerText;
+
+    // Call displayCards with the selected category and the selected brand
     displayCards(
       category,
       getSelectedBrand(),
@@ -455,9 +347,12 @@ brandOptions.forEach((option) => {
 const sizeOptions = document.querySelectorAll('input[name="size-options"]');
 sizeOptions.forEach((option) => {
   option.addEventListener("change", () => {
+    // Get the currently active category
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
     const category =
       activeCategoryButton.querySelector(".text-wrapper").innerText;
+
+    // Call displayCards with the selected category, brand, and size
     displayCards(
       category,
       getSelectedBrand(),
@@ -472,9 +367,12 @@ sizeOptions.forEach((option) => {
 const colorOptions = document.querySelectorAll('input[type="checkbox"]');
 colorOptions.forEach((option) => {
   option.addEventListener("change", () => {
+    // Get the currently active category
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
     const category =
       activeCategoryButton.querySelector(".text-wrapper").innerText;
+
+    // Call displayCards with the selected category, brand, size, and colors
     displayCards(
       category,
       getSelectedBrand(),
@@ -489,9 +387,12 @@ colorOptions.forEach((option) => {
 const priceOptions = document.querySelectorAll('input[name="price-options"]');
 priceOptions.forEach((option) => {
   option.addEventListener("change", () => {
+    // Get the currently active category
     const activeCategoryButton = document.querySelector(".div-wrapper.active");
     const category =
       activeCategoryButton.querySelector(".text-wrapper").innerText;
+
+    // Call displayCards with the selected category, brand, size, colors, and price range
     displayCards(
       category,
       getSelectedBrand(),

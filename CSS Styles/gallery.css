@@ -256,7 +256,8 @@ body {
     background-color: var(--variable-collection-secondary);
   }
   .OURGALLERY img{
-    width: 80%;
+    width: 50%;
+    height: auto;
   }
   .rate-us img{
     width: 40%;
@@ -300,7 +301,8 @@ body {
     width: 80%;
   }
   .rate-us img{
-    width: 30%;
+    width: 25%;
+    height: auto;
   }
   .social-media-container {
     background-color: var(--variable-collection-secondary);
@@ -319,13 +321,21 @@ body {
     height: 100vw;
   }
   .red{
-    height: 100vw;
+    height: 50vw;
     margin-right: 5vw;
     margin-left: 5vw;
   }
   .btn{
     padding-top: 5vw;
+    width: 300px;
 }
+
+.OURGALLERY img{
+  width: 70%;
+  height: auto;
+}
+
+
 }
 
 
@@ -377,6 +387,7 @@ body {
     margin: 0;
     padding-top: 0;
   }
+
 }
 
 /*READ: dont increase the width after 1440; the yellow container will enlarge too much*/

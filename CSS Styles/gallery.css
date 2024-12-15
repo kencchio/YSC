@@ -9,8 +9,8 @@
 }
 body {
   background-color: var(--variable-collection-secondary);
+  margin-top: 75px;
 }
-
 
 .shoes-gallery {
   width: 100%;
@@ -283,6 +283,9 @@ body {
   .red{
     height: 45vw;
     margin-bottom: 80vw;
+  }
+  body {
+    margin-top: 35px;
   }
   
 }

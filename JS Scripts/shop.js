@@ -505,13 +505,13 @@ priceOptions.forEach((option) => {
 // Initial display of all cards
 displayCards("ALL", "allbrand", "allsize", ["allcolor"], "allprice");
 
-// DEBUGGED Navbar animation for Shop
-const navbar = document.getElementById("main-navbar");
+// // DEBUGGED Navbar animation for Shop
+// const navbar = document.getElementById("main-navbar");
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 0) {
-    navbar.classList.add("navbar-after-scroll");
-  } else {
-    navbar.classList.remove("navbar-after-scroll");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 0) {
+//     navbar.classList.add("navbar-after-scroll");
+//   } else {
+//     navbar.classList.remove("navbar-after-scroll");
+//   }
+// });

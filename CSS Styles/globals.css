@@ -649,6 +649,7 @@ body {
   }
   .NAVBAR .search-box-l {
     display: block;
+    height: 24px;
   }
   .NAVBAR .left {
     order: -1;
@@ -808,6 +809,7 @@ body {
   }
   .NAVBAR .search-box-l {
     display: block;
+    height: 24px;
   }
   .NAVBAR .left {
     order: -1;

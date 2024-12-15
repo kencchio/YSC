@@ -53,14 +53,13 @@ function startTimeout() {
   }, 5000); // Set the duration (5000 ms = 5 seconds)
 }
 
-//navbar animation
-const navbar = document.getElementById("main-navbar")
+// Navbar animation
+const navbar = document.getElementById("main-navbar");
 
-window.addEventListener('scroll', function(){
-  if(window.scrollY > 0){
-    navbar.classList.add('navbar-after-scroll')
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    navbar.classList.add("navbar-after-scroll");
   } else {
-    navbar.classList.remove('navbar-after-scroll')
+    navbar.classList.remove("navbar-after-scroll");
   }
-
-})
+});

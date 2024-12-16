@@ -162,17 +162,11 @@ function displayFour() {
     card.innerHTML = `
           <div class='top-group'>
             <div class='picture-and-sale-frame'>
-            ${
-              shoe.ifSale
-                ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>`
-                : ""
-            }
+            ${shoe.ifSale ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>` : ""}
               <div class='picture-frame'>
                 <div class='overlap-group'>
                   <div class='ellipse'></div>
-                  <img class='shoe-img' src='/YSC/folder-products/card-pics/${
-                    shoe.shoePicture
-                  }' />
+                  <img class='shoe-img' src='/YSC/folder-products/card-pics/${shoe.shoePicture}' />
                 </div>
               </div>
             </div>
@@ -181,25 +175,15 @@ function displayFour() {
             <div class='text-wrapper-2' id='brand-name'>${shoe.brandName}</div>
             <div class='frame-2'>
               <div class='frame-3'>
-                <div class='text-wrapper-3' id='shoe-name'>${
-                  shoe.shoeName
-                }</div>
+                <div class='text-wrapper-3' id='shoe-name'>${shoe.shoeName}</div>
                 <img class='element-outlined-action like-button' src='/YSC/folder-icons/heart.svg' id='like-button' />
               </div>
-              <div class='text-wrapper-4' id='gender'>${
-                shoe.gender
-              } / <span id='shoe-color'>${shoe.shoeColor}</span></div>
+              <div class='text-wrapper-4' id='gender'>${shoe.gender} / <span id='shoe-color'>${shoe.shoeColor}</span></div>
             </div>
             <div class='price-frame'>
-              ${
-                shoe.ifSale
-                  ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>`
-                  : ""
-              }
-              <div class='text-wrapper-6' id='original-price'>₱ ${
-                shoe.originalPrice
-              }</div>
-            </div>
+          ${shoe.ifSale ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>` : ""}
+          ${shoe.ifSale ? `<div class='text-wrapper-6' id='original-price-st'>₱ ${shoe.originalPrice}</div>` : `<div class='text-wrapper-6' id='original-price'>₱ ${shoe.originalPrice}</div>`}
+        </div>
           </div>
         `;
 
@@ -235,46 +219,28 @@ function displayRest() {
     card.innerHTML = `
             <div class='top-group'>
                 <div class='picture-and-sale-frame'>
-                ${
-                  shoe.ifSale
-                    ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>`
-                    : ""
-                }
+                ${shoe.ifSale ? `<div class='sale-frame'><div class='sale-text'>SALE</div></div>` : ""}
                 <div class='picture-frame'>
                     <div class='overlap-group'>
                         <div class='ellipse'></div>
-                        <img class='shoe-img' src='/YSC/folder-products/card-pics/${
-                          shoe.shoePicture
-                        }' />
+                        <img class='shoe-img' src='/YSC/folder-products/card-pics/${shoe.shoePicture}' />
                     </div>
                 </div>
                 </div>
             </div>
             <div class='bottom-group'>
-                <div class='text-wrapper-2' id='brand-name'>${
-                  shoe.brandName
-                }</div>
+                <div class='text-wrapper-2' id='brand-name'>${shoe.brandName}</div>
                 <div class='frame-2'>
                     <div class='frame-3'>
-                        <div class='text-wrapper-3' id='shoe-name'>${
-                          shoe.shoeName
-                        }</div>
+                        <div class='text-wrapper-3' id='shoe-name'>${shoe.shoeName}</div>
                         <img class='element-outlined-action like-button' src='/YSC/folder-icons/heart.svg' id='like-button' />
                     </div>
-                    <div class='text-wrapper-4' id='gender'>${
-                      shoe.gender
-                    } / <span id='shoe-color'>${shoe.shoeColor}</span></div>
+                    <div class='text-wrapper-4' id='gender'>${shoe.gender} / <span id='shoe-color'>${shoe.shoeColor}</span></div>
                 </div>
                 <div class='price-frame'>
-                    ${
-                      shoe.ifSale
-                        ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>`
-                        : ""
-                    }
-                    <div class='text-wrapper-6' id='original-price'>₱ ${
-                      shoe.originalPrice
-                    }</div>
-                </div>
+          ${shoe.ifSale ? `<div class='text-wrapper-5' id='sale-price'>₱ ${shoe.salePrice}</div>` : ""}
+          ${shoe.ifSale ? `<div class='text-wrapper-6' id='original-price-st'>₱ ${shoe.originalPrice}</div>` : `<div class='text-wrapper-6' id='original-price'>₱ ${shoe.originalPrice}</div>`}
+        </div>
             </div>
         `;
 
